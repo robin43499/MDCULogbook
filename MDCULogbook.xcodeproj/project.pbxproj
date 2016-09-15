@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7514474CAF842C802B37F292 /* Pods_MDCULogbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE68BAA385CB03AA370AA81 /* Pods_MDCULogbook.framework */; };
+		75FC08D6E5EADAC6DB0F802E /* Pods_MDCULogbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181D3D0804673ED7D820A9A4 /* Pods_MDCULogbookUITests.framework */; };
 		901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93521D8A8C1700190F8C /* AppDelegate.swift */; };
 		901A93551D8A8C1700190F8C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93541D8A8C1700190F8C /* FirstViewController.swift */; };
 		901A93571D8A8C1700190F8C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93561D8A8C1700190F8C /* SecondViewController.swift */; };
@@ -15,6 +17,8 @@
 		901A935F1D8A8C1700190F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901A935D1D8A8C1700190F8C /* LaunchScreen.storyboard */; };
 		901A936A1D8A8C1700190F8C /* MDCULogbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93691D8A8C1700190F8C /* MDCULogbookTests.swift */; };
 		901A93751D8A8C1700190F8C /* MDCULogbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93741D8A8C1700190F8C /* MDCULogbookUITests.swift */; };
+		901A93831D8AABA400190F8C /* MDCUTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93821D8AABA400190F8C /* MDCUTabBar.swift */; };
+		BAE8CAC711B8AB5665F582E8 /* Pods_MDCULogbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		065DBD36CB3A76AC68831B79 /* Pods-MDCULogbookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookTests/Pods-MDCULogbookTests.release.xcconfig"; sourceTree = "<group>"; };
+		181D3D0804673ED7D820A9A4 /* Pods_MDCULogbookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDCULogbookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4489DDAF0F98B5D398D16970 /* Pods-MDCULogbookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4524FD27B8574458DC6B4A7A /* Pods-MDCULogbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.debug.xcconfig"; sourceTree = "<group>"; };
+		4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDCULogbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		901A934F1D8A8C1700190F8C /* MDCULogbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDCULogbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		901A93521D8A8C1700190F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		901A93541D8A8C1700190F8C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +58,11 @@
 		901A93701D8A8C1700190F8C /* MDCULogbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDCULogbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		901A93741D8A8C1700190F8C /* MDCULogbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDCULogbookUITests.swift; sourceTree = "<group>"; };
 		901A93761D8A8C1700190F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		901A93821D8AABA400190F8C /* MDCUTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDCUTabBar.swift; sourceTree = "<group>"; };
+		BDCEBCE3BADDBBD62525B107 /* Pods-MDCULogbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C56E56A2060BB81251FFB028 /* Pods-MDCULogbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookTests/Pods-MDCULogbookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C666B51DB428E4FC2AEC6CD7 /* Pods-MDCULogbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.release.xcconfig"; sourceTree = "<group>"; };
+		DBE68BAA385CB03AA370AA81 /* Pods_MDCULogbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDCULogbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7514474CAF842C802B37F292 /* Pods_MDCULogbook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE8CAC711B8AB5665F582E8 /* Pods_MDCULogbookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FC08D6E5EADAC6DB0F802E /* Pods_MDCULogbookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CA9F848AAF5E9D6EEC36310 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4524FD27B8574458DC6B4A7A /* Pods-MDCULogbook.debug.xcconfig */,
+				C666B51DB428E4FC2AEC6CD7 /* Pods-MDCULogbook.release.xcconfig */,
+				C56E56A2060BB81251FFB028 /* Pods-MDCULogbookTests.debug.xcconfig */,
+				065DBD36CB3A76AC68831B79 /* Pods-MDCULogbookTests.release.xcconfig */,
+				4489DDAF0F98B5D398D16970 /* Pods-MDCULogbookUITests.debug.xcconfig */,
+				BDCEBCE3BADDBBD62525B107 /* Pods-MDCULogbookUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		901A93461D8A8C1700190F8C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				901A93681D8A8C1700190F8C /* MDCULogbookTests */,
 				901A93731D8A8C1700190F8C /* MDCULogbookUITests */,
 				901A93501D8A8C1700190F8C /* Products */,
+				5CA9F848AAF5E9D6EEC36310 /* Pods */,
+				A83C32DDBFD114B34DDF27EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +135,7 @@
 				901A93541D8A8C1700190F8C /* FirstViewController.swift */,
 				901A93561D8A8C1700190F8C /* SecondViewController.swift */,
 				901A93581D8A8C1700190F8C /* Main.storyboard */,
+				901A93821D8AABA400190F8C /* MDCUTabBar.swift */,
 				901A935B1D8A8C1700190F8C /* Assets.xcassets */,
 				901A935D1D8A8C1700190F8C /* LaunchScreen.storyboard */,
 				901A93601D8A8C1700190F8C /* Info.plist */,
@@ -128,6 +161,16 @@
 			path = MDCULogbookUITests;
 			sourceTree = "<group>";
 		};
+		A83C32DDBFD114B34DDF27EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBE68BAA385CB03AA370AA81 /* Pods_MDCULogbook.framework */,
+				4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */,
+				181D3D0804673ED7D820A9A4 /* Pods_MDCULogbookUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 901A93791D8A8C1700190F8C /* Build configuration list for PBXNativeTarget "MDCULogbook" */;
 			buildPhases = (
+				6EC24711A6D98C5DEBBE204B /* [CP] Check Pods Manifest.lock */,
 				901A934B1D8A8C1700190F8C /* Sources */,
 				901A934C1D8A8C1700190F8C /* Frameworks */,
 				901A934D1D8A8C1700190F8C /* Resources */,
+				AA72A3AA257683B3D7AD2BDF /* [CP] Embed Pods Frameworks */,
+				F615744661E778056D8FF48D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 901A937C1D8A8C1700190F8C /* Build configuration list for PBXNativeTarget "MDCULogbookTests" */;
 			buildPhases = (
+				CDFE7419A69CF533EB840288 /* [CP] Check Pods Manifest.lock */,
 				901A93611D8A8C1700190F8C /* Sources */,
 				901A93621D8A8C1700190F8C /* Frameworks */,
 				901A93631D8A8C1700190F8C /* Resources */,
+				5AB9CD69B715842CF7A54500 /* [CP] Embed Pods Frameworks */,
+				4FC0B1F82D6792819F494F09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 901A937F1D8A8C1700190F8C /* Build configuration list for PBXNativeTarget "MDCULogbookUITests" */;
 			buildPhases = (
+				E1C43EE52708645415F4F538 /* [CP] Check Pods Manifest.lock */,
 				901A936C1D8A8C1700190F8C /* Sources */,
 				901A936D1D8A8C1700190F8C /* Frameworks */,
 				901A936E1D8A8C1700190F8C /* Resources */,
+				8E76ED4B8E89D50CDDA82976 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,11 +305,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4FC0B1F82D6792819F494F09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MDCULogbookTests/Pods-MDCULogbookTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AB9CD69B715842CF7A54500 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MDCULogbookTests/Pods-MDCULogbookTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EC24711A6D98C5DEBBE204B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E76ED4B8E89D50CDDA82976 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA72A3AA257683B3D7AD2BDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDFE7419A69CF533EB840288 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1C43EE52708645415F4F538 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F615744661E778056D8FF48D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		901A934B1D8A8C1700190F8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901A93831D8AABA400190F8C /* MDCUTabBar.swift in Sources */,
 				901A93571D8A8C1700190F8C /* SecondViewController.swift in Sources */,
 				901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */,
 				901A93551D8A8C1700190F8C /* FirstViewController.swift in Sources */,
@@ -337,6 +512,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -382,6 +558,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -401,8 +578,10 @@
 		};
 		901A937A1D8A8C1700190F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4524FD27B8574458DC6B4A7A /* Pods-MDCULogbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = MDCULogbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.MDCULogbook;
@@ -412,8 +591,10 @@
 		};
 		901A937B1D8A8C1700190F8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C666B51DB428E4FC2AEC6CD7 /* Pods-MDCULogbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = MDCULogbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.MDCULogbook;
@@ -423,6 +604,7 @@
 		};
 		901A937D1D8A8C1700190F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56E56A2060BB81251FFB028 /* Pods-MDCULogbookTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MDCULogbookTests/Info.plist;
@@ -435,6 +617,7 @@
 		};
 		901A937E1D8A8C1700190F8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 065DBD36CB3A76AC68831B79 /* Pods-MDCULogbookTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MDCULogbookTests/Info.plist;
@@ -447,6 +630,7 @@
 		};
 		901A93801D8A8C1700190F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4489DDAF0F98B5D398D16970 /* Pods-MDCULogbookUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MDCULogbookUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -458,6 +642,7 @@
 		};
 		901A93811D8A8C1700190F8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDCEBCE3BADDBBD62525B107 /* Pods-MDCULogbookUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MDCULogbookUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +671,7 @@
 				901A937B1D8A8C1700190F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		901A937C1D8A8C1700190F8C /* Build configuration list for PBXNativeTarget "MDCULogbookTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +680,7 @@
 				901A937E1D8A8C1700190F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		901A937F1D8A8C1700190F8C /* Build configuration list for PBXNativeTarget "MDCULogbookUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +689,7 @@
 				901A93811D8A8C1700190F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

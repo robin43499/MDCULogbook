@@ -1,0 +1,6 @@
+framework module Pods_MDCULogbookUITests {
+  umbrella header "Pods-MDCULogbookUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
