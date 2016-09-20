@@ -9,15 +9,24 @@
 /* Begin PBXBuildFile section */
 		7514474CAF842C802B37F292 /* Pods_MDCULogbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE68BAA385CB03AA370AA81 /* Pods_MDCULogbook.framework */; };
 		75FC08D6E5EADAC6DB0F802E /* Pods_MDCULogbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181D3D0804673ED7D820A9A4 /* Pods_MDCULogbookUITests.framework */; };
+		9015686A1D910048008B979C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901568691D910048008B979C /* ProfileViewController.swift */; };
+		9015686C1D910FD1008B979C /* ProcedexContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */; };
+		9015686E1D911103008B979C /* ProcedexCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */; };
+		901568701D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015686F1D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift */; };
+		901568721D91389F008B979C /* ProcedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901568711D91389F008B979C /* ProcedexViewController.swift */; };
+		901568741D914117008B979C /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901568731D914117008B979C /* PeopleViewController.swift */; };
 		901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93521D8A8C1700190F8C /* AppDelegate.swift */; };
-		901A93551D8A8C1700190F8C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93541D8A8C1700190F8C /* FirstViewController.swift */; };
-		901A93571D8A8C1700190F8C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93561D8A8C1700190F8C /* SecondViewController.swift */; };
-		901A935A1D8A8C1700190F8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901A93581D8A8C1700190F8C /* Main.storyboard */; };
-		901A935C1D8A8C1700190F8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901A935B1D8A8C1700190F8C /* Assets.xcassets */; };
+		901A935C1D8A8C1700190F8C /* pl.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901A935B1D8A8C1700190F8C /* pl.xcassets */; };
 		901A935F1D8A8C1700190F8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901A935D1D8A8C1700190F8C /* LaunchScreen.storyboard */; };
 		901A936A1D8A8C1700190F8C /* MDCULogbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93691D8A8C1700190F8C /* MDCULogbookTests.swift */; };
 		901A93751D8A8C1700190F8C /* MDCULogbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93741D8A8C1700190F8C /* MDCULogbookUITests.swift */; };
-		901A93831D8AABA400190F8C /* MDCUTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93821D8AABA400190F8C /* MDCUTabBar.swift */; };
+		905219B01D8BD09A005D7007 /* NewMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905219AF1D8BD09A005D7007 /* NewMain.storyboard */; };
+		905219B21D8FAD12005D7007 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905219B11D8FAD12005D7007 /* HomeViewController.swift */; };
+		905219B91D8FBEB1005D7007 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905219B81D8FBEB1005D7007 /* Note.storyboard */; };
+		905219BB1D8FBEF4005D7007 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905219BA1D8FBEF4005D7007 /* People.storyboard */; };
+		905219BD1D8FBF02005D7007 /* Logbook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905219BC1D8FBF02005D7007 /* Logbook.storyboard */; };
+		905219BF1D8FC0A4005D7007 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905219BE1D8FC0A4005D7007 /* NoteTableViewCell.swift */; };
+		905219C11D8FC5CA005D7007 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */; };
 		BAE8CAC711B8AB5665F582E8 /* Pods_MDCULogbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,12 +53,15 @@
 		4489DDAF0F98B5D398D16970 /* Pods-MDCULogbookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4524FD27B8574458DC6B4A7A /* Pods-MDCULogbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.debug.xcconfig"; sourceTree = "<group>"; };
 		4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDCULogbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		901568691D910048008B979C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexContainerViewController.swift; sourceTree = "<group>"; };
+		9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexCollectionViewController.swift; sourceTree = "<group>"; };
+		9015686F1D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderDepartmentCollectionReusableView.swift; sourceTree = "<group>"; };
+		901568711D91389F008B979C /* ProcedexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexViewController.swift; sourceTree = "<group>"; };
+		901568731D914117008B979C /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		901A934F1D8A8C1700190F8C /* MDCULogbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDCULogbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		901A93521D8A8C1700190F8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		901A93541D8A8C1700190F8C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		901A93561D8A8C1700190F8C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		901A93591D8A8C1700190F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		901A935B1D8A8C1700190F8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		901A935B1D8A8C1700190F8C /* pl.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = pl.xcassets; sourceTree = "<group>"; };
 		901A935E1D8A8C1700190F8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		901A93601D8A8C1700190F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		901A93651D8A8C1700190F8C /* MDCULogbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDCULogbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +70,13 @@
 		901A93701D8A8C1700190F8C /* MDCULogbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDCULogbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		901A93741D8A8C1700190F8C /* MDCULogbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDCULogbookUITests.swift; sourceTree = "<group>"; };
 		901A93761D8A8C1700190F8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		901A93821D8AABA400190F8C /* MDCUTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDCUTabBar.swift; sourceTree = "<group>"; };
+		905219AF1D8BD09A005D7007 /* NewMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewMain.storyboard; sourceTree = "<group>"; };
+		905219B11D8FAD12005D7007 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		905219B81D8FBEB1005D7007 /* Note.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
+		905219BA1D8FBEF4005D7007 /* People.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = People.storyboard; sourceTree = "<group>"; };
+		905219BC1D8FBF02005D7007 /* Logbook.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Logbook.storyboard; sourceTree = "<group>"; };
+		905219BE1D8FC0A4005D7007 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 		BDCEBCE3BADDBBD62525B107 /* Pods-MDCULogbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C56E56A2060BB81251FFB028 /* Pods-MDCULogbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookTests/Pods-MDCULogbookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C666B51DB428E4FC2AEC6CD7 /* Pods-MDCULogbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,13 +149,14 @@
 		901A93511D8A8C1700190F8C /* MDCULogbook */ = {
 			isa = PBXGroup;
 			children = (
+				905219B41D8FBE29005D7007 /* Storyboard */,
+				905219B31D8FBE18005D7007 /* Home */,
+				905219B51D8FBE3D005D7007 /* People */,
+				905219B61D8FBE5C005D7007 /* Note */,
+				905219B71D8FBE73005D7007 /* Logbook */,
 				901A93521D8A8C1700190F8C /* AppDelegate.swift */,
-				901A93541D8A8C1700190F8C /* FirstViewController.swift */,
-				901A93561D8A8C1700190F8C /* SecondViewController.swift */,
-				901A93581D8A8C1700190F8C /* Main.storyboard */,
-				901A93821D8AABA400190F8C /* MDCUTabBar.swift */,
-				901A935B1D8A8C1700190F8C /* Assets.xcassets */,
-				901A935D1D8A8C1700190F8C /* LaunchScreen.storyboard */,
+				9015686F1D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift */,
+				901A935B1D8A8C1700190F8C /* pl.xcassets */,
 				901A93601D8A8C1700190F8C /* Info.plist */,
 			);
 			path = MDCULogbook;
@@ -159,6 +178,54 @@
 				901A93761D8A8C1700190F8C /* Info.plist */,
 			);
 			path = MDCULogbookUITests;
+			sourceTree = "<group>";
+		};
+		905219B31D8FBE18005D7007 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				905219B11D8FAD12005D7007 /* HomeViewController.swift */,
+				901568691D910048008B979C /* ProfileViewController.swift */,
+				9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */,
+				9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */,
+				901568711D91389F008B979C /* ProcedexViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		905219B41D8FBE29005D7007 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				901A935D1D8A8C1700190F8C /* LaunchScreen.storyboard */,
+				905219AF1D8BD09A005D7007 /* NewMain.storyboard */,
+				905219BA1D8FBEF4005D7007 /* People.storyboard */,
+				905219B81D8FBEB1005D7007 /* Note.storyboard */,
+				905219BC1D8FBF02005D7007 /* Logbook.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		905219B51D8FBE3D005D7007 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				901568731D914117008B979C /* PeopleViewController.swift */,
+			);
+			name = People;
+			sourceTree = "<group>";
+		};
+		905219B61D8FBE5C005D7007 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */,
+				905219BE1D8FC0A4005D7007 /* NoteTableViewCell.swift */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+		905219B71D8FBE73005D7007 /* Logbook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Logbook;
 			sourceTree = "<group>";
 		};
 		A83C32DDBFD114B34DDF27EB /* Frameworks */ = {
@@ -283,9 +350,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				905219B91D8FBEB1005D7007 /* Note.storyboard in Resources */,
+				905219B01D8BD09A005D7007 /* NewMain.storyboard in Resources */,
+				905219BD1D8FBF02005D7007 /* Logbook.storyboard in Resources */,
+				905219BB1D8FBEF4005D7007 /* People.storyboard in Resources */,
 				901A935F1D8A8C1700190F8C /* LaunchScreen.storyboard in Resources */,
-				901A935C1D8A8C1700190F8C /* Assets.xcassets in Resources */,
-				901A935A1D8A8C1700190F8C /* Main.storyboard in Resources */,
+				901A935C1D8A8C1700190F8C /* pl.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,10 +503,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901A93831D8AABA400190F8C /* MDCUTabBar.swift in Sources */,
-				901A93571D8A8C1700190F8C /* SecondViewController.swift in Sources */,
+				901568721D91389F008B979C /* ProcedexViewController.swift in Sources */,
+				905219B21D8FAD12005D7007 /* HomeViewController.swift in Sources */,
+				905219C11D8FC5CA005D7007 /* NoteTableViewController.swift in Sources */,
+				9015686C1D910FD1008B979C /* ProcedexContainerViewController.swift in Sources */,
+				9015686A1D910048008B979C /* ProfileViewController.swift in Sources */,
+				901568741D914117008B979C /* PeopleViewController.swift in Sources */,
+				9015686E1D911103008B979C /* ProcedexCollectionViewController.swift in Sources */,
 				901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */,
-				901A93551D8A8C1700190F8C /* FirstViewController.swift in Sources */,
+				901568701D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift in Sources */,
+				905219BF1D8FC0A4005D7007 /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,14 +548,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		901A93581D8A8C1700190F8C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				901A93591D8A8C1700190F8C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		901A935D1D8A8C1700190F8C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

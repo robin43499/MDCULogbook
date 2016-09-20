@@ -250,6 +250,25 @@ public class RAMAnimatedTabBarController: UITabBarController {
     
     self.didLoadView = true
     
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (Int64)(2.0)), dispatch_get_main_queue(), {
+        
+        let menuButton = UIButton(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
+        var menuButtonFrame = menuButton.frame
+        menuButtonFrame.origin.y = self.view.bounds.height - menuButtonFrame.height - 5
+        menuButtonFrame.origin.x = self.view.bounds.width/2 - menuButtonFrame.size.width/2
+        menuButton.frame = menuButtonFrame
+        
+        menuButton.backgroundColor = UIColor(red: 0.322, green: 0.376, blue: 0.208, alpha: 1.0)
+        menuButton.layer.cornerRadius = menuButtonFrame.height/2
+        self.view.addSubview(menuButton)
+        
+        menuButton.setImage(UIImage(named: "new"), forState: UIControlState.Normal)
+        //menuButton.addTarget(self, action: "menuButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        self.view.layoutIfNeeded()
+    
+    });
+    
     self.initializeContainers()
   }
   
@@ -470,4 +489,27 @@ public class RAMAnimatedTabBarController: UITabBarController {
       }
     }
   }
+//    func addCenterButtonWithImage(buttonImage: UIImage, highlightImage:UIImage?)
+//    {
+//        
+//        let frame = CGRectMake(0.0, 0.0, buttonImage.size.width, buttonImage.size.height)
+//        var button = UIButton(frame: frame)
+//        button.setBackgroundImage(buttonImage, forState: UIControlState.Normal)
+//        button.setBackgroundImage(highlightImage, forState: UIControlState.Highlighted)
+//        
+//        var heightDifference:CGFloat = buttonImage.size.height - self.tabBar.frame.size.height
+//        if heightDifference < 0 {
+//            button.center = self.tabBar.center;
+//        }
+//        else
+//        {
+//            var center:CGPoint = self.tabBar.center;
+//            center.y = center.y - heightDifference/2.0;
+//            button.center = center;
+//        }
+//        
+//        button.addTarget(self, action: "changeTabToMiddleTab:", forControlEvents: UIControlEvents.TouchUpInside)
+//        
+//        self.view.addSubview(button)
+//    }
 }

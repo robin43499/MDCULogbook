@@ -1,12 +1,15 @@
 PODS:
+  - FoldingTabBar (1.0.8)
   - RAMAnimatedTabBarController (1.5.3)
 
 DEPENDENCIES:
+  - FoldingTabBar
   - RAMAnimatedTabBarController
 
 SPEC CHECKSUMS:
+  FoldingTabBar: ff8d5dbb955b9b0d8280966e2a11dd71f854e155
   RAMAnimatedTabBarController: 04b624cf8958a0032bf7fa9c0f2c515f59d30b9c
 
-PODFILE CHECKSUM: 52eb3455f5f8989963c12ddf35b53ea02416aa7f
+PODFILE CHECKSUM: 6399d94086ecfea95d5655e72db605fcb87fe204
 
 COCOAPODS: 1.0.1

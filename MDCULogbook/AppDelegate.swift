@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FoldingTabBar
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        
         //UITabBar.appearance().tintColor = UIColor(red: 0.322, green: 0.376, blue: 0.208, alpha: 1.0)
+        
+        if let tabBarController = window?.rootViewController as? YALFoldingTabBarController {
+            
+            //leftBarItems
+            
+            let firstItem = YALTabBarItem(
+                itemImage: UIImage(named: "home")!,
+                leftItemImage: UIImage(named: "profile")!,
+                rightItemImage: UIImage(named: "procedex")!
+            )
+            
+            let secondItem = YALTabBarItem(
+                itemImage: UIImage(named: "people")!,
+                leftItemImage: nil,
+                rightItemImage: nil
+            )
+            
+            tabBarController.leftBarItems = [firstItem, secondItem]
+            
+            //rightBarItems
+            
+            let thirdItem = YALTabBarItem(
+                itemImage: UIImage(named: "note")!,
+                leftItemImage: nil,
+                rightItemImage: UIImage(named: "newnote")!
+            )
+            
+            let forthItem = YALTabBarItem(
+                itemImage: UIImage(named: "logbook")!,
+                leftItemImage: nil,
+                rightItemImage: nil
+            )
+            
+            tabBarController.rightBarItems = [thirdItem, forthItem]
+            
+            tabBarController.centerButtonImage = UIImage(named:"plus")
+            
+            tabBarController.tabBarViewHeight = YALTabBarViewDefaultHeight
+            tabBarController.tabBarView.tabBarViewEdgeInsets = YALTabBarViewHDefaultEdgeInsets
+            tabBarController.tabBarView.tabBarItemsEdgeInsets = YALTabBarViewItemsDefaultEdgeInsets
+            tabBarController.tabBarView.offsetForExtraTabBarItems = YALForExtraTabBarItemsDefaultOffset
+            tabBarController.tabBarView.extraTabBarItemHeight = YALExtraTabBarItemsDefaultHeight
+            tabBarController.tabBarView.backgroundColor = UIColor.clearColor()
+            tabBarController.tabBarView.tabBarColor = UIColor(red:0.322, green:0.376, blue:0.208, alpha:1.00)
+            tabBarController.tabBarView.dotColor = UIColor.whiteColor()
+            
+            
+
+        }
         
         return true
     }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--People View Controller-->
+        <scene sceneID="L7t-ow-fMW">
+            <objects>
+                <viewController storyboardIdentifier="people" id="oPd-WP-tGf" customClass="PeopleViewController" customModule="MDCULogbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SFk-ed-Qsj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tKX-cr-u7T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BUz-hh-UUy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Oqn-jm-UiH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.25490196079999999" green="0.30980392159999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oqn-jm-UiH" firstAttribute="centerX" secondItem="BUz-hh-UUy" secondAttribute="centerX" id="Csu-hy-3D7"/>
+                            <constraint firstItem="Oqn-jm-UiH" firstAttribute="width" secondItem="BUz-hh-UUy" secondAttribute="width" id="Dv3-Yc-EYG"/>
+                            <constraint firstItem="Oqn-jm-UiH" firstAttribute="top" secondItem="SFk-ed-Qsj" secondAttribute="bottom" id="auY-4O-ega"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Oqn-jm-UiH" id="PNH-RF-TyI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2wT-Be-5QT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="342"/>
+        </scene>
+    </scenes>
+</document>

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FoldingTabBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MDCULogbook.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +32,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>93CD6401D49A9268A64794652985507E</key>
+		<key>071FCD6774D01078EB7ACA2C2695B6E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50921143F51F0C37EF856D3A82310822</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9091229326D8C5C3D0072B04E6AD712A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -38,11 +53,6 @@
 			<true/>
 		</dict>
 		<key>B7B08FAEC61215137F1CC59DE79CE382</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F869EFD7C55DAB1585EDAD5E9D6BD643</key>
 		<dict>
 			<key>primary</key>
 			<true/>

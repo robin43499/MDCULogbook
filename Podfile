@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'MDCULogbook' do
   	pod 'RAMAnimatedTabBarController'
+	pod 'FoldingTabBar'
 end
 
 target 'MDCULogbookTests' do

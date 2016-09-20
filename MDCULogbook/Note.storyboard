@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Note Table View Controller-->
+        <scene sceneID="EIm-q5-siU">
+            <objects>
+                <tableViewController storyboardIdentifier="note" id="k94-rI-7c9" customClass="NoteTableViewController" customModule="MDCULogbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" id="yxa-NK-2bE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="FHJ-fd-rsK">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" red="0.25490196079999999" green="0.30980392159999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="note" rowHeight="80" id="Lxa-ay-9o3" customClass="NoteTableViewCell" customModule="MDCULogbook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lxa-ay-9o3" id="rxK-FD-m9a">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Somchai Kaipak" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8Z-aZ-eZe">
+                                            <rect key="frame" x="92" y="22" width="103" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dengue || HIV || Flu || Sick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQW-hi-rLy">
+                                            <rect key="frame" x="92" y="58" width="147" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="12"/>
+                                            <color key="textColor" red="0.90980392160000001" green="0.31764705879999999" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M 50 ปี" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAE-MU-Ook">
+                                            <rect key="frame" x="92" y="41" width="34" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HN 12345/67" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNs-ia-Y7O">
+                                            <rect key="frame" x="92" y="8" width="63" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="7q8-dp-G6j">
+                                            <rect key="frame" x="23" y="16" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="1nc-6w-Nyz"/>
+                                                <constraint firstAttribute="width" constant="48" id="W7k-QZ-qYN"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iAE-MU-Ook" firstAttribute="leading" secondItem="e8Z-aZ-eZe" secondAttribute="leading" id="4iI-jG-A3Z"/>
+                                        <constraint firstItem="7q8-dp-G6j" firstAttribute="leading" secondItem="rxK-FD-m9a" secondAttribute="leadingMargin" constant="15" id="9QK-1K-PJp"/>
+                                        <constraint firstItem="gNs-ia-Y7O" firstAttribute="top" secondItem="rxK-FD-m9a" secondAttribute="topMargin" id="HOy-YO-9n3"/>
+                                        <constraint firstItem="gNs-ia-Y7O" firstAttribute="leading" secondItem="7q8-dp-G6j" secondAttribute="trailing" constant="21" id="NYt-wj-aMG"/>
+                                        <constraint firstItem="7q8-dp-G6j" firstAttribute="centerY" secondItem="rxK-FD-m9a" secondAttribute="centerY" id="OPW-fP-k7n"/>
+                                        <constraint firstItem="iAE-MU-Ook" firstAttribute="top" secondItem="e8Z-aZ-eZe" secondAttribute="bottom" constant="2" id="XqF-Q2-dsm"/>
+                                        <constraint firstItem="xQW-hi-rLy" firstAttribute="leading" secondItem="iAE-MU-Ook" secondAttribute="leading" id="bFP-3R-kjJ"/>
+                                        <constraint firstItem="e8Z-aZ-eZe" firstAttribute="leading" secondItem="gNs-ia-Y7O" secondAttribute="leading" id="bHc-Sk-xhW"/>
+                                        <constraint firstItem="xQW-hi-rLy" firstAttribute="top" secondItem="iAE-MU-Ook" secondAttribute="bottom" constant="5" id="hM9-gh-ib1"/>
+                                        <constraint firstItem="e8Z-aZ-eZe" firstAttribute="top" secondItem="gNs-ia-Y7O" secondAttribute="bottom" constant="2" id="rpy-o0-IBe"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ageSex" destination="iAE-MU-Ook" id="Hgg-f6-bd2"/>
+                                    <outlet property="hn" destination="gNs-ia-Y7O" id="Jdi-qN-A72"/>
+                                    <outlet property="name" destination="e8Z-aZ-eZe" id="An0-E6-o3w"/>
+                                    <outlet property="profile_pic" destination="7q8-dp-G6j" id="V6W-VI-224"/>
+                                    <outlet property="symthom" destination="xQW-hi-rLy" id="Vsz-dr-cmw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="k94-rI-7c9" id="Y8N-cc-zma"/>
+                            <outlet property="delegate" destination="k94-rI-7c9" id="wGr-EI-oba"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEz-rc-PYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="48" height="48"/>
+    </resources>
+</document>
