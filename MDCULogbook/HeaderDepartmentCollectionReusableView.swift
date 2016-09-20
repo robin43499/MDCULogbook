@@ -12,3 +12,4 @@ class HeaderDepartmentCollectionReusableView: UICollectionReusableView {
         
     @IBOutlet var department: UILabel!
 }
+

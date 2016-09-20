@@ -52,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let forthItem = YALTabBarItem(
                 itemImage: UIImage(named: "logbook")!,
                 leftItemImage: nil,
-                rightItemImage: nil
+                rightItemImage: UIImage(named: "newnote")!
             )
             
             tabBarController.rightBarItems = [thirdItem, forthItem]

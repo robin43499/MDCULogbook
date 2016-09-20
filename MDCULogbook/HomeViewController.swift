@@ -11,9 +11,16 @@ import FoldingTabBar
 
 class HomeViewController: UIViewController, YALTabBarDelegate {
     
+    @IBOutlet var setting: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        
+        setting.layer.cornerRadius = 0.5 * setting.bounds.size.width
+        setting.setImage(UIImage(named:"setting"), forState: .Normal)
+        view.addSubview(setting)
+
         
     }
     

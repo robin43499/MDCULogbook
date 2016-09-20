@@ -1,35 +1,35 @@
 //
-//  PeopleViewController.swift
+//  LogbookViewController.swift
 //  MDCULogbook
 //
-//  Created by Peeranut Mahatham on 9/20/2559 BE.
+//  Created by Peeranut Mahatham on 9/21/2559 BE.
 //  Copyright © 2559 Peeranut Mahatham. All rights reserved.
 //
 
 import UIKit
 
-class PeopleViewController: UIViewController, UICollectionViewDelegate ,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class LogbookViewController: UIViewController, UICollectionViewDelegate ,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var collectionView: UICollectionView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .None)
         
         self.collectionView!.backgroundView = UIImageView(image: UIImage(named: "background"))
-
+        
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
         
-
-
+        
+        
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(animated: Bool) {
         self.collectionView.reloadData()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,7 +47,7 @@ class PeopleViewController: UIViewController, UICollectionViewDelegate ,UICollec
     }
     
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "header", forIndexPath: indexPath) as! HeaderDepartmentCollectionReusableView2
+        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "header", forIndexPath: indexPath) as! LogbookCollectionReusableView
         if(indexPath.section % 2 == 0){
             headerView.department.text = "RESPIRATORY DEPARTMENT"
         }else{
@@ -73,11 +73,11 @@ class PeopleViewController: UIViewController, UICollectionViewDelegate ,UICollec
         let image = cell.viewWithTag(1) as! UIImageView
         image.layer.cornerRadius = 0.5 * image.bounds.size.width
         image.layer.masksToBounds = true
-        image.image = UIImage(named: "profileex")!
+        image.image = UIImage(named: "procedexex")!
         
         let name = cell.viewWithTag(2) as! UILabel
         name.adjustsFontSizeToFitWidth = true
-        name.text = "Dr. Sheldon Cooper"
+        name.text = "Blood Pressure"
         
         
         // Configure the cell
@@ -88,7 +88,4 @@ class PeopleViewController: UIViewController, UICollectionViewDelegate ,UICollec
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("cellInfo", sender: indexPath)
     }
-
-
-
 }

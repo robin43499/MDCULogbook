@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7514474CAF842C802B37F292 /* Pods_MDCULogbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE68BAA385CB03AA370AA81 /* Pods_MDCULogbook.framework */; };
 		75FC08D6E5EADAC6DB0F802E /* Pods_MDCULogbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181D3D0804673ED7D820A9A4 /* Pods_MDCULogbookUITests.framework */; };
+		900C21041D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C21031D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift */; };
+		900C21061D91A91300001325 /* DoctorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C21051D91A91300001325 /* DoctorProfileViewController.swift */; };
+		900C21081D91BC2000001325 /* LogbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C21071D91BC2000001325 /* LogbookViewController.swift */; };
+		900C210A1D91BDA600001325 /* LogbookCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C21091D91BDA600001325 /* LogbookCollectionReusableView.swift */; };
 		9015686A1D910048008B979C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901568691D910048008B979C /* ProfileViewController.swift */; };
 		9015686C1D910FD1008B979C /* ProcedexContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */; };
 		9015686E1D911103008B979C /* ProcedexCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */; };
@@ -53,6 +57,10 @@
 		4489DDAF0F98B5D398D16970 /* Pods-MDCULogbookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4524FD27B8574458DC6B4A7A /* Pods-MDCULogbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.debug.xcconfig"; sourceTree = "<group>"; };
 		4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDCULogbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900C21031D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderDepartmentCollectionReusableView2.swift; sourceTree = "<group>"; };
+		900C21051D91A91300001325 /* DoctorProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorProfileViewController.swift; sourceTree = "<group>"; };
+		900C21071D91BC2000001325 /* LogbookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogbookViewController.swift; sourceTree = "<group>"; };
+		900C21091D91BDA600001325 /* LogbookCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogbookCollectionReusableView.swift; sourceTree = "<group>"; };
 		901568691D910048008B979C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexContainerViewController.swift; sourceTree = "<group>"; };
 		9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexCollectionViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +163,6 @@
 				905219B61D8FBE5C005D7007 /* Note */,
 				905219B71D8FBE73005D7007 /* Logbook */,
 				901A93521D8A8C1700190F8C /* AppDelegate.swift */,
-				9015686F1D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift */,
 				901A935B1D8A8C1700190F8C /* pl.xcassets */,
 				901A93601D8A8C1700190F8C /* Info.plist */,
 			);
@@ -188,6 +195,7 @@
 				9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */,
 				9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */,
 				901568711D91389F008B979C /* ProcedexViewController.swift */,
+				9015686F1D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -208,6 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				901568731D914117008B979C /* PeopleViewController.swift */,
+				900C21051D91A91300001325 /* DoctorProfileViewController.swift */,
+				900C21031D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift */,
 			);
 			name = People;
 			sourceTree = "<group>";
@@ -224,6 +234,8 @@
 		905219B71D8FBE73005D7007 /* Logbook */ = {
 			isa = PBXGroup;
 			children = (
+				900C21071D91BC2000001325 /* LogbookViewController.swift */,
+				900C21091D91BDA600001325 /* LogbookCollectionReusableView.swift */,
 			);
 			name = Logbook;
 			sourceTree = "<group>";
@@ -508,9 +520,13 @@
 				905219C11D8FC5CA005D7007 /* NoteTableViewController.swift in Sources */,
 				9015686C1D910FD1008B979C /* ProcedexContainerViewController.swift in Sources */,
 				9015686A1D910048008B979C /* ProfileViewController.swift in Sources */,
+				900C21061D91A91300001325 /* DoctorProfileViewController.swift in Sources */,
+				900C21041D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift in Sources */,
 				901568741D914117008B979C /* PeopleViewController.swift in Sources */,
 				9015686E1D911103008B979C /* ProcedexCollectionViewController.swift in Sources */,
+				900C21081D91BC2000001325 /* LogbookViewController.swift in Sources */,
 				901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */,
+				900C210A1D91BDA600001325 /* LogbookCollectionReusableView.swift in Sources */,
 				901568701D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift in Sources */,
 				905219BF1D8FC0A4005D7007 /* NoteTableViewCell.swift in Sources */,
 			);

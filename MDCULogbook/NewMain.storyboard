@@ -19,17 +19,35 @@
                     <view key="view" contentMode="scaleToFill" id="Eb8-gQ-TgL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5X-Op-LCf">
+                                <rect key="frame" x="544" y="20" width="36" height="36"/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.30980392159999998" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="7aw-la-hji"/>
+                                    <constraint firstAttribute="height" constant="36" id="GdA-aM-beU"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="closePage:" destination="4o8-Gg-IR1" eventType="touchUpInside" id="65U-SE-ARM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a5X-Op-LCf" firstAttribute="top" secondItem="iVA-mT-VMo" secondAttribute="bottom" id="MRQ-h5-RTS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="a5X-Op-LCf" secondAttribute="trailing" id="oOo-81-rf5"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="4uV-y5-abI"/>
                     <connections>
+                        <outlet property="setting" destination="a5X-Op-LCf" id="MMI-RQ-0UM"/>
                         <segue destination="4o8-Gg-IR1" kind="show" identifier="profile" id="wex-4N-yj0"/>
                         <segue destination="khe-yp-MI7" kind="show" identifier="procedex" id="yam-Wg-XJS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6h-WU-iys" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640" y="110"/>
+            <point key="canvasLocation" x="482" y="-119"/>
         </scene>
         <!--people-->
         <scene sceneID="CNw-1a-bRW">
@@ -305,7 +323,7 @@
                                                 <constraint firstAttribute="width" secondItem="ph3-6a-J5Y" secondAttribute="height" multiplier="1:1" id="VLb-uf-4Wi"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuU-9a-fW4">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuU-9a-fW4">
                                             <rect key="frame" x="8" y="150" width="201" height="39"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
