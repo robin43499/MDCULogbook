@@ -31,6 +31,8 @@
 		905219BD1D8FBF02005D7007 /* Logbook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905219BC1D8FBF02005D7007 /* Logbook.storyboard */; };
 		905219BF1D8FC0A4005D7007 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905219BE1D8FC0A4005D7007 /* NoteTableViewCell.swift */; };
 		905219C11D8FC5CA005D7007 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */; };
+		90622FF51D92787600DC5961 /* DoctorRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90622FF41D92787600DC5961 /* DoctorRequestViewController.swift */; };
+		90622FF71D927DAB00DC5961 /* LogbookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90622FF61D927DAB00DC5961 /* LogbookDetailViewController.swift */; };
 		BAE8CAC711B8AB5665F582E8 /* Pods_MDCULogbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +87,8 @@
 		905219BC1D8FBF02005D7007 /* Logbook.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Logbook.storyboard; sourceTree = "<group>"; };
 		905219BE1D8FC0A4005D7007 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
+		90622FF41D92787600DC5961 /* DoctorRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorRequestViewController.swift; sourceTree = "<group>"; };
+		90622FF61D927DAB00DC5961 /* LogbookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogbookDetailViewController.swift; sourceTree = "<group>"; };
 		BDCEBCE3BADDBBD62525B107 /* Pods-MDCULogbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C56E56A2060BB81251FFB028 /* Pods-MDCULogbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookTests/Pods-MDCULogbookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C666B51DB428E4FC2AEC6CD7 /* Pods-MDCULogbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.release.xcconfig"; sourceTree = "<group>"; };
@@ -216,8 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				901568731D914117008B979C /* PeopleViewController.swift */,
-				900C21051D91A91300001325 /* DoctorProfileViewController.swift */,
 				900C21031D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift */,
+				900C21051D91A91300001325 /* DoctorProfileViewController.swift */,
+				90622FF41D92787600DC5961 /* DoctorRequestViewController.swift */,
 			);
 			name = People;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			children = (
 				900C21071D91BC2000001325 /* LogbookViewController.swift */,
 				900C21091D91BDA600001325 /* LogbookCollectionReusableView.swift */,
+				90622FF61D927DAB00DC5961 /* LogbookDetailViewController.swift */,
 			);
 			name = Logbook;
 			sourceTree = "<group>";
@@ -516,12 +522,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				901568721D91389F008B979C /* ProcedexViewController.swift in Sources */,
+				90622FF71D927DAB00DC5961 /* LogbookDetailViewController.swift in Sources */,
 				905219B21D8FAD12005D7007 /* HomeViewController.swift in Sources */,
 				905219C11D8FC5CA005D7007 /* NoteTableViewController.swift in Sources */,
 				9015686C1D910FD1008B979C /* ProcedexContainerViewController.swift in Sources */,
 				9015686A1D910048008B979C /* ProfileViewController.swift in Sources */,
 				900C21061D91A91300001325 /* DoctorProfileViewController.swift in Sources */,
 				900C21041D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift in Sources */,
+				90622FF51D92787600DC5961 /* DoctorRequestViewController.swift in Sources */,
 				901568741D914117008B979C /* PeopleViewController.swift in Sources */,
 				9015686E1D911103008B979C /* ProcedexCollectionViewController.swift in Sources */,
 				900C21081D91BC2000001325 /* LogbookViewController.swift in Sources */,

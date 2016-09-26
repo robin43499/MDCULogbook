@@ -29,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let firstItem = YALTabBarItem(
                 itemImage: UIImage(named: "home")!,
-                leftItemImage: UIImage(named: "profile")!,
-                rightItemImage: UIImage(named: "procedex")!
+                leftItemImage: nil,
+                rightItemImage: nil
             )
             
             let secondItem = YALTabBarItem(
@@ -68,11 +68,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             tabBarController.tabBarView.tabBarColor = UIColor(red:0.322, green:0.376, blue:0.208, alpha:1.00)
             tabBarController.tabBarView.dotColor = UIColor.whiteColor()
             
-            
 
         }
         
         return true
+    }
+    
+    func drawImageView(mainImage: UIImage, withBadge badge: UIImage) -> UIImage
+    {
+        UIGraphicsBeginImageContextWithOptions(mainImage.size, false, 0.0)
+        mainImage.drawInRect(CGRectMake(0, 0, mainImage.size.width, mainImage.size.height))
+        badge.drawInRect(CGRectMake(mainImage.size.width - badge.size.width, 0, badge.size.width, badge.size.height))
+        
+        let resultImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return resultImage
     }
 
     func applicationWillResignActive(application: UIApplication) {

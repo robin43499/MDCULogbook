@@ -14,7 +14,6 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .None)
         
         self.collectionView!.backgroundView = UIImageView(image: UIImage(named: "background"))
         
@@ -28,6 +27,8 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
     }
     override func viewDidAppear(animated: Bool) {
         self.collectionView.reloadData()
+        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .None)
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -86,6 +87,6 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("cellInfo", sender: indexPath)
+        self.performSegueWithIdentifier("logbookInfo", sender: indexPath)
     }
 }

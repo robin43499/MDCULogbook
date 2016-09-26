@@ -1,5 +1,5 @@
 //
-//  DoctorProfileViewController.swift
+//  DoctorRequestViewController.swift
 //  MDCULogbook
 //
 //  Created by Peeranut Mahatham on 9/21/2559 BE.
@@ -8,18 +8,20 @@
 
 import UIKit
 
-class DoctorProfileViewController: UIViewController {
+class DoctorRequestViewController: UIViewController {
 
     @IBOutlet var closeButton: UIButton!
     
     @IBAction func closePage(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    @IBAction func submitButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var profileView: UIView!
     
     @IBOutlet var request: UIButton!
-    @IBOutlet var review: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,12 +31,11 @@ class DoctorProfileViewController: UIViewController {
         closeButton.setImage(UIImage(named:"close"), forState: .Normal)
         view.addSubview(closeButton)
         profileImage.image = UIImage(named: "profileex")!
-
+        
         profileView.layer.cornerRadius = 20
         profileView.layer.masksToBounds = true
         
-        review.layer.cornerRadius = 18
-        review.layer.masksToBounds = true
+
         request.layer.cornerRadius = 18
         request.layer.masksToBounds = true
         
@@ -53,7 +54,6 @@ class DoctorProfileViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
