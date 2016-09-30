@@ -12,40 +12,59 @@ class DoctorProfileViewController: UIViewController {
 
     @IBOutlet var closeButton: UIButton!
     
-    @IBAction func closePage(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func closePage(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var profileView: UIView!
     
+    @IBOutlet var profileName: UILabel!
     @IBOutlet var request: UIButton!
-    @IBOutlet var review: UIButton!
+
+    @IBOutlet var status: UITextView!
+    
+    var isTeacher = Bool()
+    var name = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
-        closeButton.layer.cornerRadius = 0.5 * closeButton.bounds.size.width
-        closeButton.setImage(UIImage(named:"close"), forState: .Normal)
+        closeButton.layer.cornerRadius = 12
+        closeButton.setImage(UIImage(named:"close"), for: UIControlState())
         view.addSubview(closeButton)
         profileImage.image = UIImage(named: "profileex")!
 
         profileView.layer.cornerRadius = 20
         profileView.layer.masksToBounds = true
         
-        review.layer.cornerRadius = 18
-        review.layer.masksToBounds = true
-        request.layer.cornerRadius = 18
-        request.layer.masksToBounds = true
+        
+        
+        status.layer.cornerRadius = 10
+        status.layer.masksToBounds = true
+        status.layer.borderColor = UIColor.lightGray.cgColor
+        status.layer.borderWidth = 1
+        
+        if(isTeacher){
+            profileImage.image = UIImage(named: "profileex")!
+            request.layer.cornerRadius = 18
+            request.layer.masksToBounds = true
+        }else{
+            profileImage.image = UIImage(named: "student")!
+            request.isHidden = true
+            status.text = "Hello, I'm a student."
+        }
+        self.profileName.text = name
+
         
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
-        profileImage.layer.cornerRadius = 0.5 * profileImage.bounds.size.width
+        profileImage.layer.cornerRadius = 50
         profileImage.layer.masksToBounds = true
-        self.view.bringSubviewToFront(profileImage)
+        self.view.bringSubview(toFront: profileImage)
         
         
     }

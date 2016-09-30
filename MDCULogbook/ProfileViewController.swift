@@ -17,8 +17,8 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     @IBOutlet var status: UITextView!
     @IBOutlet var update: UIButton!
     
-    @IBAction func closePage(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func closePage(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
         closeButton.layer.cornerRadius = 0.5 * closeButton.bounds.size.width
-        closeButton.setImage(UIImage(named:"close"), forState: .Normal)
+        closeButton.setImage(UIImage(named:"close"), for: UIControlState())
         view.addSubview(closeButton)
         
         self.department.delegate = self
@@ -37,7 +37,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         update.layer.cornerRadius = 15
         update.layer.masksToBounds = true
         
-        update.hidden = true
+        update.isHidden = true
         
 
 
@@ -45,25 +45,25 @@ class ProfileViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         // Do any additional setup after loading the view.
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
-        update.hidden = false
+        update.isHidden = false
         return false
     }
     
-    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange,replacementText text: String) -> Bool {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange,replacementText text: String) -> Bool {
         if(text == "\n") {
             status.resignFirstResponder()
-            update.hidden = false
+            update.isHidden = false
             return false
         }
         return true
     }
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         profileImage.layer.cornerRadius = 0.5 * profileImage.bounds.size.width
         profileImage.layer.masksToBounds = true
-        self.view.bringSubviewToFront(profileImage)
+        self.view.bringSubview(toFront: profileImage)
         
         
     }

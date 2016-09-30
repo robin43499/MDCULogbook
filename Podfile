@@ -3,8 +3,12 @@
 use_frameworks!
 
 target 'MDCULogbook' do
-  	pod 'RAMAnimatedTabBarController'
-	pod 'FoldingTabBar'
+	pod 'FoldingTabBar', '~> 1.1'
+	pod "MBCircularProgressBar"
+	pod "MIBadgeButton-Swift"
+	pod 'TagListView'
+
+
 end
 
 target 'MDCULogbookTests' do

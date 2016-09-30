@@ -7,33 +7,41 @@
 //
 
 import UIKit
+import MIBadgeButton_Swift
 
 
 
 class ProcedexCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet var back: UIBarButtonItem!
+    @IBAction func closePage(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.collectionView!.backgroundView = UIImageView(image: UIImage(named: "background"))
         
-        //self.tableView.backgroundView = UIImageView(image: UIImage(named: "backgroundImage.png"))
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.322, green: 0.373, blue: 0.216, alpha: 1.0)
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
 
         
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        //self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        navigationItem.backBarButtonItem = backItem
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.collectionView?.reloadData()
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -47,44 +55,50 @@ class ProcedexCollectionViewController: UICollectionViewController, UICollection
 
     // MARK: UICollectionViewDataSource
     
-    func collectionView(collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSizeMake(collectionView.bounds.size.width/3.5, collectionView.bounds.size.width/3.5)
+        return CGSize(width: collectionView.bounds.size.width/3.5, height: collectionView.bounds.size.width/3.5)
         
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         let cInset = (collectionView.bounds.size.width - ((3*collectionView.bounds.size.width)/3.5))/6
         return UIEdgeInsets(top: 0.0, left: cInset, bottom: 15.0, right: cInset)
     }
     
-    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "header", forIndexPath: indexPath) as! HeaderDepartmentCollectionReusableView
-        if(indexPath.section % 2 == 0){
-            headerView.department.text = "RESPIRATORY DEPARTMENT"
-        }else{
-            headerView.department.text = "ORTHOPEDIC DEPARTMENT"
-        }
-        return headerView
-    }
+//    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath) as! HeaderDepartmentCollectionReusableView
+//        headerView.department.text = "ORTHOPEDIC DEPARTMENT"
+//        
+//        return headerView
+//    }
    
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 6
+        return 1
     }
 
 
-    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 4
+        return 30
     }
 
-    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath)
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
-        let image = cell.viewWithTag(1) as! UIImageView
-        //image.layer.cornerRadius = image.frame.height/2
-        image.image = UIImage(named: "procedexex")!
+        let image = cell.viewWithTag(1) as! UILabel
+        image.layer.cornerRadius = 0.5 * image.bounds.size.width
+        image.layer.masksToBounds = true
+        image.text = "BP"
+        image.backgroundColor = getRandomColor()
+        
+        let badge = cell.viewWithTag(3) as! MIBadgeButton
+        badge.badgeString = "3/15"
+        badge.badgeEdgeInsets = UIEdgeInsetsMake(15, 0, 0, 15)
+        badge.badgeTextColor = UIColor.white
+        badge.badgeBackgroundColor = UIColor(red:0.910 ,green:0.318, blue:0.325, alpha:1.00)
+
         
         let name = cell.viewWithTag(2) as! UILabel
         name.adjustsFontSizeToFitWidth = true
@@ -96,11 +110,22 @@ class ProcedexCollectionViewController: UICollectionViewController, UICollection
         return cell
     }
     
-    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("cellInfo", sender: indexPath)
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "cellInfo", sender: indexPath)
     }
 
-    
+    func getRandomColor() -> UIColor{
+        
+        var randomRed:CGFloat = CGFloat(drand48())
+        
+        var randomGreen:CGFloat = CGFloat(drand48())
+        
+        var randomBlue:CGFloat = CGFloat(drand48())
+        
+        return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+        
+    }
+
     
     
     // MARK: UICollectionViewDelegate

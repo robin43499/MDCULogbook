@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import MIBadgeButton_Swift
 
 class LogbookViewController: UIViewController, UICollectionViewDelegate ,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var collectionView: UICollectionView!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.collectionView!.backgroundView = UIImageView(image: UIImage(named: "background"))
+        self.view.backgroundColor = UIColor(red: 0.255, green: 0.310, blue: 0.157, alpha: 1.0)
+
+        //self.collectionView!.backgroundView = UIImageView(image: UIImage(named: "background"))
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
@@ -25,9 +29,11 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
         
         // Do any additional setup after loading the view.
     }
-    override func viewDidAppear(animated: Bool) {
+
+    
+    override func viewDidAppear(_ animated: Bool) {
         self.collectionView.reloadData()
-        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .None)
+        UIApplication.shared.setStatusBarHidden(false, with: .none)
 
     }
     
@@ -36,20 +42,20 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
         // Dispose of any resources that can be recreated.
     }
     
-    func collectionView(collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSizeMake(collectionView.bounds.size.width/3.5, collectionView.bounds.size.width/3.5)
+        return CGSize(width: collectionView.bounds.size.width/3.5, height: collectionView.bounds.size.width/3.5)
         
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         let cInset = (collectionView.bounds.size.width - ((3*collectionView.bounds.size.width)/3.5))/6
         return UIEdgeInsets(top: 0.0, left: cInset, bottom: 15.0, right: cInset)
     }
     
-    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "header", forIndexPath: indexPath) as! LogbookCollectionReusableView
-        if(indexPath.section % 2 == 0){
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath) as! LogbookCollectionReusableView
+        if((indexPath as NSIndexPath).section % 2 == 0){
             headerView.department.text = "RESPIRATORY DEPARTMENT"
         }else{
             headerView.department.text = "ORTHOPEDIC DEPARTMENT"
@@ -57,24 +63,31 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
         return headerView
     }
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 6
     }
     
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return 4
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         
-        let image = cell.viewWithTag(1) as! UIImageView
+        let image = cell.viewWithTag(1) as! UILabel
         image.layer.cornerRadius = 0.5 * image.bounds.size.width
         image.layer.masksToBounds = true
-        image.image = UIImage(named: "procedexex")!
+        image.text = "BP"
+        let badge = cell.viewWithTag(3) as! MIBadgeButton
+        badge.badgeString = "3/15"
+        badge.badgeEdgeInsets = UIEdgeInsetsMake(15, 0, 0, 15)
+        badge.badgeTextColor = UIColor.white
+        badge.badgeBackgroundColor = UIColor.red
+        
+        
         
         let name = cell.viewWithTag(2) as! UILabel
         name.adjustsFontSizeToFitWidth = true
@@ -86,7 +99,7 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier("logbookInfo", sender: indexPath)
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "logbookInfo", sender: indexPath)
     }
 }

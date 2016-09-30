@@ -33,6 +33,9 @@
 		905219C11D8FC5CA005D7007 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */; };
 		90622FF51D92787600DC5961 /* DoctorRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90622FF41D92787600DC5961 /* DoctorRequestViewController.swift */; };
 		90622FF71D927DAB00DC5961 /* LogbookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90622FF61D927DAB00DC5961 /* LogbookDetailViewController.swift */; };
+		90B489BF1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */; };
+		90B489C11D9A5AC3007AC33C /* SymptomsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */; };
+		90C4F9681D9C18E300B18ADC /* ProcedexListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4F9671D9C18E300B18ADC /* ProcedexListTableViewController.swift */; };
 		BAE8CAC711B8AB5665F582E8 /* Pods_MDCULogbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +92,9 @@
 		905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 		90622FF41D92787600DC5961 /* DoctorRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorRequestViewController.swift; sourceTree = "<group>"; };
 		90622FF61D927DAB00DC5961 /* LogbookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogbookDetailViewController.swift; sourceTree = "<group>"; };
+		90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsCollectionViewController.swift; sourceTree = "<group>"; };
+		90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsDetailViewController.swift; sourceTree = "<group>"; };
+		90C4F9671D9C18E300B18ADC /* ProcedexListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexListTableViewController.swift; sourceTree = "<group>"; };
 		BDCEBCE3BADDBBD62525B107 /* Pods-MDCULogbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C56E56A2060BB81251FFB028 /* Pods-MDCULogbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookTests/Pods-MDCULogbookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C666B51DB428E4FC2AEC6CD7 /* Pods-MDCULogbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,10 +201,10 @@
 			isa = PBXGroup;
 			children = (
 				905219B11D8FAD12005D7007 /* HomeViewController.swift */,
+				90B489C21D9A61BF007AC33C /* Ward */,
+				90B489B91D9A48DD007AC33C /* symptoms */,
 				901568691D910048008B979C /* ProfileViewController.swift */,
 				9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */,
-				9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */,
-				901568711D91389F008B979C /* ProcedexViewController.swift */,
 				9015686F1D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift */,
 			);
 			name = Home;
@@ -244,6 +250,25 @@
 				90622FF61D927DAB00DC5961 /* LogbookDetailViewController.swift */,
 			);
 			name = Logbook;
+			sourceTree = "<group>";
+		};
+		90B489B91D9A48DD007AC33C /* symptoms */ = {
+			isa = PBXGroup;
+			children = (
+				90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */,
+				90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */,
+			);
+			name = symptoms;
+			sourceTree = "<group>";
+		};
+		90B489C21D9A61BF007AC33C /* Ward */ = {
+			isa = PBXGroup;
+			children = (
+				9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */,
+				90C4F9671D9C18E300B18ADC /* ProcedexListTableViewController.swift */,
+				901568711D91389F008B979C /* ProcedexViewController.swift */,
+			);
+			name = Ward;
 			sourceTree = "<group>";
 		};
 		A83C32DDBFD114B34DDF27EB /* Frameworks */ = {
@@ -332,13 +357,16 @@
 				TargetAttributes = {
 					901A934E1D8A8C1700190F8C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					901A93641D8A8C1700190F8C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 901A934E1D8A8C1700190F8C;
 					};
 					901A936F1D8A8C1700190F8C = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 901A934E1D8A8C1700190F8C;
 					};
 				};
@@ -526,16 +554,19 @@
 				905219B21D8FAD12005D7007 /* HomeViewController.swift in Sources */,
 				905219C11D8FC5CA005D7007 /* NoteTableViewController.swift in Sources */,
 				9015686C1D910FD1008B979C /* ProcedexContainerViewController.swift in Sources */,
+				90C4F9681D9C18E300B18ADC /* ProcedexListTableViewController.swift in Sources */,
 				9015686A1D910048008B979C /* ProfileViewController.swift in Sources */,
 				900C21061D91A91300001325 /* DoctorProfileViewController.swift in Sources */,
 				900C21041D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift in Sources */,
 				90622FF51D92787600DC5961 /* DoctorRequestViewController.swift in Sources */,
 				901568741D914117008B979C /* PeopleViewController.swift in Sources */,
+				90B489BF1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift in Sources */,
 				9015686E1D911103008B979C /* ProcedexCollectionViewController.swift in Sources */,
 				900C21081D91BC2000001325 /* LogbookViewController.swift in Sources */,
 				901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */,
 				900C210A1D91BDA600001325 /* LogbookCollectionReusableView.swift in Sources */,
 				901568701D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift in Sources */,
+				90B489C11D9A5AC3007AC33C /* SymptomsDetailViewController.swift in Sources */,
 				905219BF1D8FC0A4005D7007 /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,6 +709,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.MDCULogbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -691,6 +723,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.MDCULogbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -703,6 +736,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.MDCULogbookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDCULogbook.app/MDCULogbook";
 			};
 			name = Debug;
@@ -716,6 +750,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.MDCULogbookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDCULogbook.app/MDCULogbook";
 			};
 			name = Release;
@@ -728,6 +763,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.MDCULogbookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MDCULogbook;
 			};
 			name = Debug;
@@ -740,6 +776,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GeekSquadConsulting.MDCULogbookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = MDCULogbook;
 			};
 			name = Release;

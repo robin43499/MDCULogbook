@@ -9,6 +9,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBCircularProgressBar-MBCircularProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBCircularProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MIBadgeButton-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MDCULogbook.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,7 +39,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RAMAnimatedTabBarController.xcscheme</key>
+		<key>TagListView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,12 +47,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>071FCD6774D01078EB7ACA2C2695B6E0</key>
+		<key>64F7897793D6B27BE321E8D7592B3638</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>50921143F51F0C37EF856D3A82310822</key>
+		<key>6DE07670D38FD884A24F3CC3D1411551</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>860A9179BCFD9F1C616D8653DB2B4F91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FC4B2785BB68892651401B8A26A15AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>B7B08FAEC61215137F1CC59DE79CE382</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4E47FE86DD8FF7A15EDEBF39A715E97</key>
 		<dict>
 			<key>primary</key>
 			<true/>

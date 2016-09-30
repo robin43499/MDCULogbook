@@ -1,15 +1,21 @@
 PODS:
-  - FoldingTabBar (1.0.8)
-  - RAMAnimatedTabBarController (1.5.3)
+  - FoldingTabBar (1.1)
+  - MBCircularProgressBar (0.3.4)
+  - MIBadgeButton-Swift (0.4)
+  - TagListView (1.0.1)
 
 DEPENDENCIES:
-  - FoldingTabBar
-  - RAMAnimatedTabBarController
+  - FoldingTabBar (~> 1.1)
+  - MBCircularProgressBar
+  - MIBadgeButton-Swift
+  - TagListView
 
 SPEC CHECKSUMS:
-  FoldingTabBar: ff8d5dbb955b9b0d8280966e2a11dd71f854e155
-  RAMAnimatedTabBarController: 04b624cf8958a0032bf7fa9c0f2c515f59d30b9c
+  FoldingTabBar: 55a302cc5753755f917bf0e70b8083705fb2fe8c
+  MBCircularProgressBar: ff3b8e2f441214d9ee122a24ba0d4d00cc7de881
+  MIBadgeButton-Swift: b5d07924904c84bcb8e8fe3c3131b8499f28930c
+  TagListView: cd871de4ab3ae4c4c67a2e67f6503ea6fc55c2a6
 
-PODFILE CHECKSUM: 6399d94086ecfea95d5655e72db605fcb87fe204
+PODFILE CHECKSUM: 558a31fbe421df09e129a0ab7c067d40d5e636aa
 
 COCOAPODS: 1.0.1

@@ -12,11 +12,11 @@ class DoctorRequestViewController: UIViewController {
 
     @IBOutlet var closeButton: UIButton!
     
-    @IBAction func closePage(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func closePage(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
-    @IBAction func submitButton(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func submitButton(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var profileView: UIView!
@@ -27,8 +27,8 @@ class DoctorRequestViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
-        closeButton.layer.cornerRadius = 0.5 * closeButton.bounds.size.width
-        closeButton.setImage(UIImage(named:"close"), forState: .Normal)
+        closeButton.layer.cornerRadius = 12
+        closeButton.setImage(UIImage(named:"close"), for: UIControlState())
         view.addSubview(closeButton)
         profileImage.image = UIImage(named: "profileex")!
         
@@ -42,11 +42,11 @@ class DoctorRequestViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
-        profileImage.layer.cornerRadius = 0.5 * profileImage.bounds.size.width
+        profileImage.layer.cornerRadius = 50
         profileImage.layer.masksToBounds = true
-        self.view.bringSubviewToFront(profileImage)
+        self.view.bringSubview(toFront: profileImage)
         
         
     }

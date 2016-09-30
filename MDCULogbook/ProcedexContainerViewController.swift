@@ -13,16 +13,16 @@ class ProcedexContainerViewController: UIViewController {
     
     @IBOutlet var closeButton: UIButton!
     
-    @IBAction func closePage(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func closePage(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
-        closeButton.layer.cornerRadius = 0.5 * closeButton.bounds.size.width
-        closeButton.setImage(UIImage(named:"close"), forState: .Normal)
+        closeButton.layer.cornerRadius = 12.5
+        closeButton.setImage(UIImage(named:"close"), for: UIControlState())
         view.addSubview(closeButton)
         
         // Do any additional setup after loading the view.

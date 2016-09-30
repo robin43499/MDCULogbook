@@ -13,13 +13,17 @@ class NoteTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .None)
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIApplication.shared.setStatusBarHidden(true, with: .none)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +33,43 @@ class NoteTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 2
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if(section==0){
+            return "13 September 2016"
+        }else{
+            return "14 September 2016"
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    
+        let header = view as! UITableViewHeaderFooterView
+        header.contentView.backgroundColor = UIColor(red: 0.933, green: 0.933, blue: 0.933, alpha: 1.0)
+
+
+        header.textLabel?.textColor = UIColor.darkGray
+        header.textLabel?.font = UIFont.systemFont(ofSize: 14)
+    
+    
+    }
+    
+        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 3
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("note", forIndexPath: indexPath) as! NoteTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "note", for: indexPath) as! NoteTableViewCell
         
         cell.name.text = "Mr.Somchai Kaipak"
         cell.ageSex.text = "M 50 ปี"

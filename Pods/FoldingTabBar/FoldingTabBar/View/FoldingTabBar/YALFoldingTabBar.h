@@ -5,9 +5,10 @@
 @class YALFoldingTabBar;
 @class YALFoldingTabBarController;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol YALTabBarDataSource <NSObject>
 
-@required
 - (NSArray *)leftTabBarItemsInTabBarView:(YALFoldingTabBar *)tabBarView;
 - (NSArray *)rightTabBarItemsInTabBarView:(YALFoldingTabBar *)tabBarView;
 - (UIImage *)centerImageInTabBarView:(YALFoldingTabBar *)tabBarView;
@@ -43,12 +44,12 @@ typedef NS_ENUM(NSUInteger, YALTabBarState) {
 /**
  *  Default data source is YALFoldingTabBarController.
  */
-@property (nonatomic, weak) id<YALTabBarDataSource> dataSource;
+@property (nonatomic, weak, nullable) id<YALTabBarDataSource> dataSource;
 
 /**
  *  Default delegate is YALFoldingTabBarController.
  */
-@property (nonatomic, weak) id<YALTabBarDelegate> delegate;
+@property (nonatomic, weak, nullable) id<YALTabBarDelegate> delegate;
 
 @property (nonatomic, assign) YALTabBarState state;
 @property (nonatomic, assign) NSUInteger selectedTabBarItemIndex;
@@ -60,4 +61,9 @@ typedef NS_ENUM(NSUInteger, YALTabBarState) {
 @property (nonatomic, assign) CGFloat extraTabBarItemHeight;
 @property (nonatomic, assign) CGFloat offsetForExtraTabBarItems;
 
+- (void)changeExtraLeftTabBarItemWithImage:(UIImage * _Nullable)image;
+- (void)changeExtraRightTabBarItemWithImage:(UIImage * _Nullable)image;
+
 @end
+
+NS_ASSUME_NONNULL_END

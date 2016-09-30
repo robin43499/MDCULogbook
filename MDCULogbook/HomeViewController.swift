@@ -8,6 +8,7 @@
 
 import UIKit
 import FoldingTabBar
+import MBCircularProgressBar
 
 class HomeViewController: UIViewController, YALTabBarDelegate {
     
@@ -19,13 +20,24 @@ class HomeViewController: UIViewController, YALTabBarDelegate {
  
     @IBOutlet var wardProgressView: UIView!
     @IBOutlet var symptomProgressView: UIView!
+    @IBOutlet var evaluatableLabel: UILabel!
+    
+    
     @IBOutlet var saveButton: UIButton!
 
     
+    @IBOutlet var wardProgress: MBCircularProgressBarView!
+    @IBOutlet var symptomsProgress: MBCircularProgressBarView!
+    
+    //levelbar
+    @IBOutlet var levelBar: UIProgressView!
+    var currentEXP = 1000
+    var maxEXP = 1900
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: .None)
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
+        
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
 
         statusTextView.layer.cornerRadius = 10
@@ -36,11 +48,27 @@ class HomeViewController: UIViewController, YALTabBarDelegate {
         symptomProgressView.layer.masksToBounds = true
         saveButton.layer.cornerRadius = 10
         saveButton.layer.masksToBounds = true
-
         
-//        setting.layer.cornerRadius = 0.5 * setting.bounds.size.width
-//        setting.setImage(UIImage(named:"setting"), forState: .Normal)
-//        view.addSubview(setting)
+        wardProgress.value = 0
+        wardProgress.maxValue = 113
+        wardProgress.unitString = "/113"
+        symptomsProgress.value = 0
+        symptomsProgress.maxValue = 300
+        symptomsProgress.unitString = "/300"
+        evaluatableLabel.adjustsFontSizeToFitWidth = true
+        
+        statusTextView.layer.borderWidth = 1
+        statusTextView.layer.borderColor = UIColor.gray.cgColor
+        //Don't Forget
+        saveButton.isHidden = true
+        
+        
+        
+        //levelbar
+        let fractionalProgress = Float(currentEXP) / Float(maxEXP)
+        levelBar.setProgress(fractionalProgress, animated: true)
+
+        levelBar.transform  = CGAffineTransform(scaleX: 1, y: 2.5)
         
     
         
@@ -49,12 +77,28 @@ class HomeViewController: UIViewController, YALTabBarDelegate {
         
     }
     
-    override func viewWillAppear(animated: Bool) {
+
+    
+    override func viewDidAppear(_ animated: Bool) {
+        wardProgress.setValue(CGFloat(69), animateWithDuration: 1)
+        symptomsProgress.setValue(CGFloat(100), animateWithDuration: 1)
+        UIApplication.shared.setStatusBarHidden(false, with: .none)
+
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        wardProgress.value = 0
+        symptomsProgress.value = 0
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
         profileImage.layer.cornerRadius = 0.5 * profileImage.bounds.size.width
         profileImage.layer.masksToBounds = true
-        self.view.bringSubviewToFront(profileImage)
+        self.view.bringSubview(toFront: profileImage)
         
+        self.view.reloadInputViews()
         
     }
 
@@ -65,9 +109,14 @@ class HomeViewController: UIViewController, YALTabBarDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func tabBarDidSelectExtraLeftItem(tabBar: YALFoldingTabBar!){
-        self.performSegueWithIdentifier("profile", sender: self)
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = "Something Else"
+        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
     }
+    
+
 //    func tabBarDidSelectExtraRightItem(tabBar: YALFoldingTabBar!){
 //        self.performSegueWithIdentifier("procedex", sender: self)
 //    }
