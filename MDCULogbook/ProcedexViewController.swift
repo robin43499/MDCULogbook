@@ -48,6 +48,7 @@ class ProcedexViewController: UIViewController {
         simButton.setTitleColor(UIColor(red: 0.800, green: 0.800, blue: 0.800, alpha: 1.0), for: UIControlState.normal)
         simButton.layer.borderColor = UIColor(red: 0.800, green: 0.800, blue: 0.800, alpha: 1.0).cgColor
         
+        //add tag
         procedureTagViewList.addTag("Blood Pressure")
         diagnosisTagViewList.addTag("High Pressure")
         diagnosisTagViewList.addTag("Low Blood")

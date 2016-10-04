@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DisplaySwitcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FoldingTabBar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,11 +52,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>64F7897793D6B27BE321E8D7592B3638</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>6DE07670D38FD884A24F3CC3D1411551</key>
 		<dict>
 			<key>primary</key>
@@ -77,12 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B2CB032615489E62FF07008F44F340E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B7B08FAEC61215137F1CC59DE79CE382</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4E47FE86DD8FF7A15EDEBF39A715E97</key>
+		<key>E01F0D77F3BAA913766049C708CA9B85</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E95CDFFB7E4FC3A45F2DBA8E8F24484C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -11,22 +11,22 @@ import TagListView
 
 class LogbookDetailViewController: UIViewController, TagListViewDelegate, UITextFieldDelegate {
 
+    //close button
     @IBOutlet var closeButton: UIButton!
-
+    @IBAction func closePage(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBOutlet var diagnosisTagListView: TagListView!
     @IBOutlet var symptomsTagListView: TagListView!
-    
     @IBOutlet var diagnosisTextField: UITextField!
     @IBOutlet var symptomsTextField: UITextField!
    
    
-    @IBAction func closePage(_ sender: AnyObject) {
-        dismiss(animated: true, completion: nil)
-    }
+
 
     @IBOutlet var submit: UIButton!
     @IBOutlet var addNext: UIButton!
-
     @IBOutlet var InfoView: UIView!
     
     //button
@@ -95,11 +95,6 @@ class LogbookDetailViewController: UIViewController, TagListViewDelegate, UIText
         view.addSubview(closeButton)
         
 
-        
-//        submit.layer.cornerRadius = 18
-//        submit.layer.masksToBounds = true
-//        addNext.layer.cornerRadius = 18
-//        addNext.layer.masksToBounds = true
         InfoView.layer.cornerRadius = 18
         InfoView.layer.masksToBounds = true
         viewButton.layer.cornerRadius = 3
@@ -129,15 +124,10 @@ class LogbookDetailViewController: UIViewController, TagListViewDelegate, UIText
         
         self.hideKeyboardWhenTappedAround()
         
-
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
 
- 
-        
     }
 
     override func didReceiveMemoryWarning() {

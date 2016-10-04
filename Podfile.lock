@@ -1,21 +1,24 @@
 PODS:
+  - DisplaySwitcher (1.0)
   - FoldingTabBar (1.1)
   - MBCircularProgressBar (0.3.4)
   - MIBadgeButton-Swift (0.4)
   - TagListView (1.0.1)
 
 DEPENDENCIES:
+  - DisplaySwitcher
   - FoldingTabBar (~> 1.1)
   - MBCircularProgressBar
   - MIBadgeButton-Swift
   - TagListView
 
 SPEC CHECKSUMS:
+  DisplaySwitcher: 0b750bfc0426b83a983b26d0c26c06283c116c57
   FoldingTabBar: 55a302cc5753755f917bf0e70b8083705fb2fe8c
   MBCircularProgressBar: ff3b8e2f441214d9ee122a24ba0d4d00cc7de881
   MIBadgeButton-Swift: b5d07924904c84bcb8e8fe3c3131b8499f28930c
   TagListView: cd871de4ab3ae4c4c67a2e67f6503ea6fc55c2a6
 
-PODFILE CHECKSUM: 558a31fbe421df09e129a0ab7c067d40d5e636aa
+PODFILE CHECKSUM: ca1d321090dba61d4871945df319de605141e8bf
 
 COCOAPODS: 1.0.1

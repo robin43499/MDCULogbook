@@ -10,9 +10,9 @@ import UIKit
 import MIBadgeButton_Swift
 
 
-
 class ProcedexCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
+    //close button
     @IBOutlet var back: UIBarButtonItem!
     @IBAction func closePage(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
@@ -20,14 +20,12 @@ class ProcedexCollectionViewController: UICollectionViewController, UICollection
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.collectionView!.backgroundView = UIImageView(image: UIImage(named: "background"))
-        
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.322, green: 0.373, blue: 0.216, alpha: 1.0)
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
 
-        
+        //for next navigation view
         let backItem = UIBarButtonItem()
         backItem.title = "Back"
         navigationItem.backBarButtonItem = backItem
@@ -42,28 +40,15 @@ class ProcedexCollectionViewController: UICollectionViewController, UICollection
         self.collectionView?.reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    // MARK: UICollectionViewDataSource
-    
+    //collectionview
     func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: collectionView.bounds.size.width/3.5, height: collectionView.bounds.size.width/3.5)
+        return CGSize(width: 115, height: 115)
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let cInset = (collectionView.bounds.size.width - ((3*collectionView.bounds.size.width)/3.5))/6
-        return UIEdgeInsets(top: 0.0, left: cInset, bottom: 15.0, right: cInset)
+        let cInset = (collectionView.bounds.size.width - (3 * CGFloat(115)))/6
+        return UIEdgeInsets(top: 0.0, left: cInset, bottom: 0.0, right: cInset)
     }
     
 //    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -74,13 +59,11 @@ class ProcedexCollectionViewController: UICollectionViewController, UICollection
 //    }
    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return 30
     }
 
@@ -88,7 +71,7 @@ class ProcedexCollectionViewController: UICollectionViewController, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         
         let image = cell.viewWithTag(1) as! UILabel
-        image.layer.cornerRadius = 0.5 * image.bounds.size.width
+        image.layer.cornerRadius = 0.5 * 0.6 * CGFloat(115)
         image.layer.masksToBounds = true
         image.text = "BP"
         image.backgroundColor = getRandomColor()
@@ -103,10 +86,7 @@ class ProcedexCollectionViewController: UICollectionViewController, UICollection
         let name = cell.viewWithTag(2) as! UILabel
         name.adjustsFontSizeToFitWidth = true
         name.text = "Blood Pressure"
-        
-    
-        // Configure the cell
-    
+
         return cell
     }
     

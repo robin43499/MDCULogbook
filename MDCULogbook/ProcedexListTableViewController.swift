@@ -9,9 +9,7 @@
 import UIKit
 
 class ProcedexListTableViewController: UITableViewController {
-//    @IBAction func back(_ sender: AnyObject) {
-//        dismiss(animated: true, completion: nil)
-//    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +17,7 @@ class ProcedexListTableViewController: UITableViewController {
          self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
         
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
+                
         let backItem = UIBarButtonItem()
         backItem.title = "Back"
         navigationItem.backBarButtonItem = backItem

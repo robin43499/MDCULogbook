@@ -7,6 +7,7 @@ target 'MDCULogbook' do
 	pod "MBCircularProgressBar"
 	pod "MIBadgeButton-Swift"
 	pod 'TagListView'
+	pod ‘DisplaySwitcher’
 
 
 end
