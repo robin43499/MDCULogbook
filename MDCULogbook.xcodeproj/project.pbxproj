@@ -29,6 +29,7 @@
 		905219C11D8FC5CA005D7007 /* NoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */; };
 		90622FF51D92787600DC5961 /* DoctorRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90622FF41D92787600DC5961 /* DoctorRequestViewController.swift */; };
 		90622FF71D927DAB00DC5961 /* LogbookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90622FF61D927DAB00DC5961 /* LogbookDetailViewController.swift */; };
+		90A206C01DAD04B500CF9493 /* NoteChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A206BF1DAD04B500CF9493 /* NoteChatViewController.swift */; };
 		90B489BF1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */; };
 		90B489C11D9A5AC3007AC33C /* SymptomsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */; };
 		90C4F9681D9C18E300B18ADC /* ProcedexListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4F9671D9C18E300B18ADC /* ProcedexListTableViewController.swift */; };
@@ -94,6 +95,7 @@
 		905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewController.swift; sourceTree = "<group>"; };
 		90622FF41D92787600DC5961 /* DoctorRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorRequestViewController.swift; sourceTree = "<group>"; };
 		90622FF61D927DAB00DC5961 /* LogbookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogbookDetailViewController.swift; sourceTree = "<group>"; };
+		90A206BF1DAD04B500CF9493 /* NoteChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteChatViewController.swift; sourceTree = "<group>"; };
 		90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsCollectionViewController.swift; sourceTree = "<group>"; };
 		90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsDetailViewController.swift; sourceTree = "<group>"; };
 		90C4F9671D9C18E300B18ADC /* ProcedexListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexListTableViewController.swift; sourceTree = "<group>"; };
@@ -212,7 +214,10 @@
 			children = (
 				905219B11D8FAD12005D7007 /* HomeViewController.swift */,
 				90B489C21D9A61BF007AC33C /* Ward */,
-				90B489B91D9A48DD007AC33C /* symptoms */,
+				90B489B91D9A48DD007AC33C /* Symptoms */,
+				90A206C11DAD082600CF9493 /* Setting */,
+				90A206C21DAD146200CF9493 /* Feedback */,
+				90A206C31DAD156200CF9493 /* Calendar */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 			children = (
 				905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */,
 				905219BE1D8FC0A4005D7007 /* NoteTableViewCell.swift */,
+				90A206BF1DAD04B500CF9493 /* NoteChatViewController.swift */,
 			);
 			name = Note;
 			sourceTree = "<group>";
@@ -258,13 +264,34 @@
 			name = Logbook;
 			sourceTree = "<group>";
 		};
-		90B489B91D9A48DD007AC33C /* symptoms */ = {
+		90A206C11DAD082600CF9493 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		90A206C21DAD146200CF9493 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Feedback;
+			sourceTree = "<group>";
+		};
+		90A206C31DAD156200CF9493 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		90B489B91D9A48DD007AC33C /* Symptoms */ = {
 			isa = PBXGroup;
 			children = (
 				90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */,
 				90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */,
 			);
-			name = symptoms;
+			name = Symptoms;
 			sourceTree = "<group>";
 		};
 		90B489C21D9A61BF007AC33C /* Ward */ = {
@@ -650,6 +677,7 @@
 				900C21081D91BC2000001325 /* LogbookViewController.swift in Sources */,
 				901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */,
 				900C210A1D91BDA600001325 /* LogbookCollectionReusableView.swift in Sources */,
+				90A206C01DAD04B500CF9493 /* NoteChatViewController.swift in Sources */,
 				90C4F97E1DA5266300B18ADC /* LoginViewController.swift in Sources */,
 				90B489C11D9A5AC3007AC33C /* SymptomsDetailViewController.swift in Sources */,
 				90C4F9871DA625F300B18ADC /* SettingTeacherTableViewController.swift in Sources */,

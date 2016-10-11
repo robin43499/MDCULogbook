@@ -57,13 +57,17 @@ class NoteTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "note", for: indexPath) as! NoteTableViewCell
         cell.name.text = "Mr.Somchai Kaipak"
-        cell.ageSex.text = "M 50 ปี"
-        cell.symthom.text = "Dengue || HIV || Flu || Sick"
+//        cell.ageSex.text = "M 50 ปี"
+//        cell.symthom.text = "Dengue || HIV || Flu || Sick"
         cell.hn.text = "HN 12345/67"
         cell.profile_pic.layer.cornerRadius = 24
         cell.profile_pic.layer.masksToBounds = true
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "showNote", sender: self)
     }
     
 

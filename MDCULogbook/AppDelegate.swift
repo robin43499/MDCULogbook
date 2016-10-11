@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let firstItem = YALTabBarItem(
                 itemImage: UIImage(named: "home")!,
                 leftItemImage: nil,
-                rightItemImage: nil
+                rightItemImage: UIImage(named: "calendar")!
             )
             
             let secondItem = YALTabBarItem(

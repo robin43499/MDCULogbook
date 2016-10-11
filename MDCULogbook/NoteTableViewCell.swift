@@ -11,8 +11,8 @@ import UIKit
 class NoteTableViewCell: UITableViewCell {
 
     @IBOutlet var name: UILabel!
-    @IBOutlet var ageSex: UILabel!
-    @IBOutlet var symthom: UILabel!
+    //@IBOutlet var ageSex: UILabel!
+    //@IBOutlet var symthom: UILabel!
     @IBOutlet var hn: UILabel!
     @IBOutlet var profile_pic: UIImageView!
     

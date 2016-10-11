@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -60,7 +60,6 @@
                                     <outlet property="hn" destination="gNs-ia-Y7O" id="Jdi-qN-A72"/>
                                     <outlet property="name" destination="e8Z-aZ-eZe" id="An0-E6-o3w"/>
                                     <outlet property="profile_pic" destination="7q8-dp-G6j" id="V6W-VI-224"/>
-                                    <segue destination="xTj-Ui-gb4" kind="modal" modalTransitionStyle="crossDissolve" id="O6X-iC-llP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -69,15 +68,18 @@
                             <outlet property="delegate" destination="k94-rI-7c9" id="wGr-EI-oba"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="xTj-Ui-gb4" kind="presentation" identifier="showNote" modalTransitionStyle="crossDissolve" id="b5A-QK-yds"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEz-rc-PYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="511"/>
+            <point key="canvasLocation" x="102" y="532"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--Note Chat View Controller-->
         <scene sceneID="Egn-hK-mKI">
             <objects>
-                <viewController id="xTj-Ui-gb4" customClass="ChatViewController" customModule="MDCULogbook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xTj-Ui-gb4" customClass="NoteChatViewController" customModule="MDCULogbook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qlm-kh-0OE"/>
                         <viewControllerLayoutGuide type="bottom" id="Bal-Yg-zhC"/>
@@ -93,7 +95,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="k94-rI-7c9" kind="modal" modalTransitionStyle="crossDissolve" id="i5d-bm-0mt"/>
+                                            <action selector="back:" destination="xTj-Ui-gb4" eventType="touchUpInside" id="CUh-g6-vxp"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -156,7 +158,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="66Z-cA-O1u" id="cik-cg-c0C">
-                                            <frame key="frameInset" width="375" height="77"/>
+                                            <frame key="frameInset" width="375" height="76.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileex2" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-Qp-d09">
@@ -191,10 +193,6 @@
                                         <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="xTj-Ui-gb4" id="s55-cq-JpN"/>
-                                    <outlet property="delegate" destination="xTj-Ui-gb4" id="24i-2T-fwr"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
@@ -212,9 +210,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0jn-GT-1su"/>
-                    <connections>
-                        <outlet property="tableView" destination="4uY-XL-fiX" id="TMX-PT-TsT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAj-A4-Uxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
