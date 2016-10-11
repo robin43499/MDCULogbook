@@ -13,6 +13,7 @@ import FoldingTabBar
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var teaTabBarController: UITabBarController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -22,6 +23,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().tintColor = UIColor(red: 0.322, green: 0.376, blue: 0.208, alpha: 1.0)
         
+        //teacherTabBar
+        let stb = UIStoryboard(name: "Notification", bundle: nil)
+        let noti = stb.instantiateViewController(withIdentifier: "teaNoti")
+        noti.tabBarItem = UITabBarItem(title: "Notification", image: UIImage(named: "teaNoti"), selectedImage: UIImage(named: "teaNoti"))
+        
+        noti.tabBarItem.badgeValue = "18"
+        
+
+        
+        let stb2 = UIStoryboard(name: "ClinicalNote", bundle: nil)
+        let clinicalNote = stb2.instantiateViewController(withIdentifier: "clinicalNote") as? ClinicalNoteTableViewController
+        clinicalNote?.tabBarItem = UITabBarItem(title: "Clinical Note", image: UIImage(named: "teaClinicalNote"), selectedImage: UIImage(named: "teaClinicalNote"))
+        
+        let stb3 = UIStoryboard(name: "Search", bundle: nil)
+        let search = stb3.instantiateViewController(withIdentifier: "Search")
+        search.tabBarItem = UITabBarItem(title: "Search", image: UIImage(named: "teaSearch"), selectedImage: UIImage(named: "teaSearch"))
+        
+        let stb4 = UIStoryboard(name: "Setting", bundle: nil)
+        let teaSetting = stb4.instantiateViewController(withIdentifier: "setting")
+        teaSetting.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(named: "teaSetting"), selectedImage: UIImage(named: "teaSetting"))
+        
+        self.teaTabBarController = UITabBarController()
+        self.teaTabBarController!.setViewControllers([noti, clinicalNote!,search,teaSetting], animated: false);
+        
+        
+        
+        return true
+    }
+    
+    func yalTabBar(){
         if let tabBarController = window?.rootViewController as? YALFoldingTabBarController {
             
             //leftBarItems
@@ -67,10 +98,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             tabBarController.tabBarView.tabBarColor = UIColor(red:0.322, green:0.376, blue:0.208, alpha:1.00)
             tabBarController.tabBarView.dotColor = UIColor.white
             
-
+            
         }
-        
-        return true
+
     }
     
     func drawImageView(_ mainImage: UIImage, withBadge badge: UIImage) -> UIImage

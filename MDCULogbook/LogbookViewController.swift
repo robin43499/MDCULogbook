@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FoldingTabBar
 import MIBadgeButton_Swift
 
 class LogbookViewController: UIViewController, UICollectionViewDelegate ,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -73,7 +74,7 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         
         let image = cell.viewWithTag(1) as! UILabel
-        image.layer.cornerRadius = 0.5 * 06 * CGFloat(115)
+        image.layer.cornerRadius = 0.5 * 0.6 * CGFloat(115)
         image.layer.masksToBounds = true
         image.text = "BP"
         
@@ -94,4 +95,10 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "logbookInfo", sender: indexPath)
     }
+    
+    func tabBarDidSelectExtraRightItem(_ tabBar: YALFoldingTabBar!){
+        
+        self.performSegue(withIdentifier: "logbookInfo", sender: AnyObject.self)
+    }
+
 }

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IYZ-et-nCT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="v1F-bU-fw6">
+            <objects>
+                <viewController id="IYZ-et-nCT" customClass="LoginViewController" customModule="MDCULogbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hLf-lE-tOp"/>
+                        <viewControllerLayoutGuide type="bottom" id="dgm-nd-cgH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rN3-xG-ubu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuH-l7-30V">
+                                <state key="normal" title="Student"/>
+                                <connections>
+                                    <action selector="student:" destination="IYZ-et-nCT" eventType="touchUpInside" id="8db-AI-W8q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nY-tF-1bQ">
+                                <state key="normal" title="Teacher"/>
+                                <connections>
+                                    <action selector="teacher:" destination="IYZ-et-nCT" eventType="touchUpInside" id="bQh-CK-FTX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kuH-l7-30V" firstAttribute="centerX" secondItem="rN3-xG-ubu" secondAttribute="centerX" id="avz-S9-Alo"/>
+                            <constraint firstItem="2nY-tF-1bQ" firstAttribute="centerX" secondItem="rN3-xG-ubu" secondAttribute="centerX" id="iYE-xz-bwd"/>
+                            <constraint firstItem="kuH-l7-30V" firstAttribute="centerY" secondItem="rN3-xG-ubu" secondAttribute="centerY" id="p0G-nv-drf"/>
+                            <constraint firstItem="2nY-tF-1bQ" firstAttribute="centerY" secondItem="rN3-xG-ubu" secondAttribute="centerY" multiplier="1.2" id="qza-56-ttJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="ztS-dh-ldI" kind="presentation" identifier="student" id="JEO-LA-PLn"/>
+                        <segue destination="zQS-jE-zlT" kind="presentation" identifier="teacher" id="YfU-Gs-yY4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eH-WO-t02" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="100"/>
+        </scene>
+        <!--stuMain-->
+        <scene sceneID="HoE-kW-vWs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewMain" referencedIdentifier="stuMain" id="ztS-dh-ldI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eB-q1-yFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="84"/>
+        </scene>
+        <!--teaMain-->
+        <scene sceneID="iCW-WQ-UAN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notification" referencedIdentifier="teaMain" id="zQS-jE-zlT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zly-Nv-vTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="262"/>
+        </scene>
+    </scenes>
+</document>

@@ -92,7 +92,7 @@ class LogbookDetailViewController: UIViewController, TagListViewDelegate, UIText
         
         closeButton.layer.cornerRadius = CGFloat(12)
         closeButton.setImage(UIImage(named:"close"), for: UIControlState())
-        view.addSubview(closeButton)
+        
         
 
         InfoView.layer.cornerRadius = 18

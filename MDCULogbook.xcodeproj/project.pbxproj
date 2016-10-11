@@ -32,6 +32,16 @@
 		90B489BF1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */; };
 		90B489C11D9A5AC3007AC33C /* SymptomsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */; };
 		90C4F9681D9C18E300B18ADC /* ProcedexListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4F9671D9C18E300B18ADC /* ProcedexListTableViewController.swift */; };
+		90C4F9701DA51FD500B18ADC /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C4F96F1DA51FD500B18ADC /* Notification.storyboard */; };
+		90C4F9721DA51FE200B18ADC /* ClinicalNote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C4F9711DA51FE200B18ADC /* ClinicalNote.storyboard */; };
+		90C4F9741DA51FF500B18ADC /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C4F9731DA51FF500B18ADC /* Search.storyboard */; };
+		90C4F9761DA51FFE00B18ADC /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C4F9751DA51FFE00B18ADC /* Setting.storyboard */; };
+		90C4F97A1DA5227600B18ADC /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4F9791DA5227600B18ADC /* NotificationTableViewController.swift */; };
+		90C4F97C1DA5239B00B18ADC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C4F97B1DA5239B00B18ADC /* Login.storyboard */; };
+		90C4F97E1DA5266300B18ADC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4F97D1DA5266300B18ADC /* LoginViewController.swift */; };
+		90C4F9831DA625C400B18ADC /* ClinicalNoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4F9821DA625C400B18ADC /* ClinicalNoteTableViewController.swift */; };
+		90C4F9851DA625DF00B18ADC /* SearchTeacherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4F9841DA625DF00B18ADC /* SearchTeacherTableViewController.swift */; };
+		90C4F9871DA625F300B18ADC /* SettingTeacherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4F9861DA625F300B18ADC /* SettingTeacherTableViewController.swift */; };
 		BAE8CAC711B8AB5665F582E8 /* Pods_MDCULogbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +97,16 @@
 		90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsCollectionViewController.swift; sourceTree = "<group>"; };
 		90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsDetailViewController.swift; sourceTree = "<group>"; };
 		90C4F9671D9C18E300B18ADC /* ProcedexListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexListTableViewController.swift; sourceTree = "<group>"; };
+		90C4F96F1DA51FD500B18ADC /* Notification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		90C4F9711DA51FE200B18ADC /* ClinicalNote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClinicalNote.storyboard; sourceTree = "<group>"; };
+		90C4F9731DA51FF500B18ADC /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		90C4F9751DA51FFE00B18ADC /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		90C4F9791DA5227600B18ADC /* NotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
+		90C4F97B1DA5239B00B18ADC /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		90C4F97D1DA5266300B18ADC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		90C4F9821DA625C400B18ADC /* ClinicalNoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicalNoteTableViewController.swift; sourceTree = "<group>"; };
+		90C4F9841DA625DF00B18ADC /* SearchTeacherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTeacherTableViewController.swift; sourceTree = "<group>"; };
+		90C4F9861DA625F300B18ADC /* SettingTeacherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTeacherTableViewController.swift; sourceTree = "<group>"; };
 		BDCEBCE3BADDBBD62525B107 /* Pods-MDCULogbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C56E56A2060BB81251FFB028 /* Pods-MDCULogbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookTests/Pods-MDCULogbookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C666B51DB428E4FC2AEC6CD7 /* Pods-MDCULogbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +181,7 @@
 			children = (
 				905219B41D8FBE29005D7007 /* Storyboard */,
 				90C4F96B1DA4193D00B18ADC /* StudentController */,
+				90C4F9771DA5222900B18ADC /* TeacherController */,
 				901A93521D8A8C1700190F8C /* AppDelegate.swift */,
 				901A935B1D8A8C1700190F8C /* pl.xcassets */,
 				901A93601D8A8C1700190F8C /* Info.plist */,
@@ -200,8 +221,10 @@
 			isa = PBXGroup;
 			children = (
 				901A935D1D8A8C1700190F8C /* LaunchScreen.storyboard */,
+				90C4F97B1DA5239B00B18ADC /* Login.storyboard */,
 				90C4F9691DA414C700B18ADC /* Student */,
-				90C4F96A1DA416C800B18ADC /* Teacher */,
+				90C4F96E1DA51FC200B18ADC /* Teacher */,
+				90C4F97D1DA5266300B18ADC /* LoginViewController.swift */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -265,13 +288,6 @@
 			name = Student;
 			sourceTree = "<group>";
 		};
-		90C4F96A1DA416C800B18ADC /* Teacher */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Teacher;
-			sourceTree = "<group>";
-		};
 		90C4F96B1DA4193D00B18ADC /* StudentController */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +297,60 @@
 				905219B71D8FBE73005D7007 /* Logbook */,
 			);
 			name = StudentController;
+			sourceTree = "<group>";
+		};
+		90C4F96E1DA51FC200B18ADC /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				90C4F96F1DA51FD500B18ADC /* Notification.storyboard */,
+				90C4F9711DA51FE200B18ADC /* ClinicalNote.storyboard */,
+				90C4F9731DA51FF500B18ADC /* Search.storyboard */,
+				90C4F9751DA51FFE00B18ADC /* Setting.storyboard */,
+			);
+			name = Teacher;
+			sourceTree = "<group>";
+		};
+		90C4F9771DA5222900B18ADC /* TeacherController */ = {
+			isa = PBXGroup;
+			children = (
+				90C4F9781DA5224A00B18ADC /* Notification */,
+				90C4F97F1DA622F700B18ADC /* ClinicalNote */,
+				90C4F9801DA6230100B18ADC /* Search */,
+				90C4F9811DA6230B00B18ADC /* Setting */,
+			);
+			name = TeacherController;
+			sourceTree = "<group>";
+		};
+		90C4F9781DA5224A00B18ADC /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				90C4F9791DA5227600B18ADC /* NotificationTableViewController.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		90C4F97F1DA622F700B18ADC /* ClinicalNote */ = {
+			isa = PBXGroup;
+			children = (
+				90C4F9821DA625C400B18ADC /* ClinicalNoteTableViewController.swift */,
+			);
+			name = ClinicalNote;
+			sourceTree = "<group>";
+		};
+		90C4F9801DA6230100B18ADC /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				90C4F9841DA625DF00B18ADC /* SearchTeacherTableViewController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		90C4F9811DA6230B00B18ADC /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				90C4F9861DA625F300B18ADC /* SettingTeacherTableViewController.swift */,
+			);
+			name = Setting;
 			sourceTree = "<group>";
 		};
 		A83C32DDBFD114B34DDF27EB /* Frameworks */ = {
@@ -369,6 +439,7 @@
 				TargetAttributes = {
 					901A934E1D8A8C1700190F8C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FCA995W2V4;
 						LastSwiftMigration = 0800;
 					};
 					901A93641D8A8C1700190F8C = {
@@ -411,9 +482,14 @@
 				905219B91D8FBEB1005D7007 /* Note.storyboard in Resources */,
 				905219B01D8BD09A005D7007 /* NewMain.storyboard in Resources */,
 				905219BD1D8FBF02005D7007 /* Logbook.storyboard in Resources */,
+				90C4F9721DA51FE200B18ADC /* ClinicalNote.storyboard in Resources */,
+				90C4F9741DA51FF500B18ADC /* Search.storyboard in Resources */,
 				905219BB1D8FBEF4005D7007 /* People.storyboard in Resources */,
 				901A935F1D8A8C1700190F8C /* LaunchScreen.storyboard in Resources */,
+				90C4F9761DA51FFE00B18ADC /* Setting.storyboard in Resources */,
 				901A935C1D8A8C1700190F8C /* pl.xcassets in Resources */,
+				90C4F9701DA51FD500B18ADC /* Notification.storyboard in Resources */,
+				90C4F97C1DA5239B00B18ADC /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,7 +650,12 @@
 				900C21081D91BC2000001325 /* LogbookViewController.swift in Sources */,
 				901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */,
 				900C210A1D91BDA600001325 /* LogbookCollectionReusableView.swift in Sources */,
+				90C4F97E1DA5266300B18ADC /* LoginViewController.swift in Sources */,
 				90B489C11D9A5AC3007AC33C /* SymptomsDetailViewController.swift in Sources */,
+				90C4F9871DA625F300B18ADC /* SettingTeacherTableViewController.swift in Sources */,
+				90C4F97A1DA5227600B18ADC /* NotificationTableViewController.swift in Sources */,
+				90C4F9851DA625DF00B18ADC /* SearchTeacherTableViewController.swift in Sources */,
+				90C4F9831DA625C400B18ADC /* ClinicalNoteTableViewController.swift in Sources */,
 				905219BF1D8FC0A4005D7007 /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -712,6 +793,7 @@
 			baseConfigurationReference = 4524FD27B8574458DC6B4A7A /* Pods-MDCULogbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FCA995W2V4;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = MDCULogbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -726,6 +808,7 @@
 			baseConfigurationReference = C666B51DB428E4FC2AEC6CD7 /* Pods-MDCULogbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FCA995W2V4;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = MDCULogbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
