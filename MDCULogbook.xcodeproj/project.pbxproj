@@ -36,6 +36,7 @@
 		90B489BF1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */; };
 		90B489C11D9A5AC3007AC33C /* SymptomsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */; };
 		90C4F9681D9C18E300B18ADC /* ProcedexListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C4F9671D9C18E300B18ADC /* ProcedexListTableViewController.swift */; };
+		B7C9D6D91D9EAA6400A6C913 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C9D6D81D9EAA6400A6C913 /* ChatViewController.swift */; };
 		BAE8CAC711B8AB5665F582E8 /* Pods_MDCULogbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		90B489BE1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsCollectionViewController.swift; sourceTree = "<group>"; };
 		90B489C01D9A5AC3007AC33C /* SymptomsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymptomsDetailViewController.swift; sourceTree = "<group>"; };
 		90C4F9671D9C18E300B18ADC /* ProcedexListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexListTableViewController.swift; sourceTree = "<group>"; };
+		B7C9D6D81D9EAA6400A6C913 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		BDCEBCE3BADDBBD62525B107 /* Pods-MDCULogbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C56E56A2060BB81251FFB028 /* Pods-MDCULogbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookTests/Pods-MDCULogbookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C666B51DB428E4FC2AEC6CD7 /* Pods-MDCULogbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.release.xcconfig"; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 			children = (
 				905219C01D8FC5CA005D7007 /* NoteTableViewController.swift */,
 				905219BE1D8FC0A4005D7007 /* NoteTableViewCell.swift */,
+				B7C9D6D81D9EAA6400A6C913 /* ChatViewController.swift */,
 			);
 			name = Note;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				900C210A1D91BDA600001325 /* LogbookCollectionReusableView.swift in Sources */,
 				901568701D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift in Sources */,
 				90B489C11D9A5AC3007AC33C /* SymptomsDetailViewController.swift in Sources */,
+				B7C9D6D91D9EAA6400A6C913 /* ChatViewController.swift in Sources */,
 				905219BF1D8FC0A4005D7007 /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

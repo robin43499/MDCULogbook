@@ -57,7 +57,7 @@ class NoteTableViewController: UITableViewController {
 
 
         header.textLabel?.textColor = UIColor.darkGray
-        header.textLabel?.font = UIFont.systemFont(ofSize: 14)
+        header.textLabel?.font = UIFont.systemFont(ofSize: 12)
     
     
     }
@@ -72,8 +72,6 @@ class NoteTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "note", for: indexPath) as! NoteTableViewCell
         
         cell.name.text = "Mr.Somchai Kaipak"
-        cell.ageSex.text = "M 50 ปี"
-        cell.symthom.text = "Dengue || HIV || Flu || Sick"
         cell.hn.text = "HN 12345/67"
         cell.profile_pic.layer.cornerRadius = 24
         cell.profile_pic.layer.masksToBounds = true

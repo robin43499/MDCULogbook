@@ -21,8 +21,6 @@ class NoteTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         name.adjustsFontSizeToFitWidth = true
-        ageSex.adjustsFontSizeToFitWidth = true
-        symthom.adjustsFontSizeToFitWidth = true
         hn.adjustsFontSizeToFitWidth = true
     }
 
