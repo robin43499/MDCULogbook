@@ -14,7 +14,6 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
     @IBOutlet var collectionView: UICollectionView!
     
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(red: 0.255, green: 0.310, blue: 0.157, alpha: 1.0)
@@ -25,16 +24,12 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
         self.collectionView.dataSource = self
         
         
-        
-        
-        // Do any additional setup after loading the view.
     }
 
     
     override func viewDidAppear(_ animated: Bool) {
         self.collectionView.reloadData()
         UIApplication.shared.setStatusBarHidden(false, with: .none)
-
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,15 +37,15 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
         // Dispose of any resources that can be recreated.
     }
     
+    //collectionView
     func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: collectionView.bounds.size.width/3.5, height: collectionView.bounds.size.width/3.5)
+        return CGSize(width: 115, height: 115)
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let cInset = (collectionView.bounds.size.width - ((3*collectionView.bounds.size.width)/3.5))/6
-        return UIEdgeInsets(top: 0.0, left: cInset, bottom: 15.0, right: cInset)
+        let cInset = (collectionView.bounds.size.width - (3*CGFloat(115)))/6
+        return UIEdgeInsets(top: 0.0, left: cInset, bottom: 0.0, right: cInset)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -78,23 +73,20 @@ class LogbookViewController: UIViewController, UICollectionViewDelegate ,UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         
         let image = cell.viewWithTag(1) as! UILabel
-        image.layer.cornerRadius = 0.5 * image.bounds.size.width
+        image.layer.cornerRadius = 0.5 * 06 * CGFloat(115)
         image.layer.masksToBounds = true
         image.text = "BP"
+        
+        //badge
         let badge = cell.viewWithTag(3) as! MIBadgeButton
         badge.badgeString = "3/15"
         badge.badgeEdgeInsets = UIEdgeInsetsMake(15, 0, 0, 15)
         badge.badgeTextColor = UIColor.white
         badge.badgeBackgroundColor = UIColor.red
         
-        
-        
         let name = cell.viewWithTag(2) as! UILabel
         name.adjustsFontSizeToFitWidth = true
         name.text = "Blood Pressure"
-        
-        
-        // Configure the cell
         
         return cell
     }

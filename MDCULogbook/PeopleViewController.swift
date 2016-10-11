@@ -9,48 +9,40 @@
 import UIKit
 import FoldingTabBar
 
-class PeopleViewController: UIViewController, UICollectionViewDelegate ,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate, UIGestureRecognizerDelegate {
-    @IBOutlet var searchBar: UISearchBar!
-    @IBOutlet var collectionView: UICollectionView!
+class PeopleViewController: UIViewController, UITableViewDelegate,UITableViewDataSource, UISearchBarDelegate, UIGestureRecognizerDelegate {
     
+    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var table: UITableView!
     
     var isTeacher = true
     var isSearching = false
     var nameToSend = String()
     
-   // @IBOutlet var gesture: UITapGestureRecognizer!
     var student = ["Anthony Smith","Brad Smith","Chuck Smith","Dean Smith","Eugene Smith","Falcon Smith","George Smith"]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         UIApplication.shared.setStatusBarHidden(true, with: .none)
-        
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.322, green: 0.373, blue: 0.216, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
         
-        
-    
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
+        self.table.delegate = self
+        self.table.dataSource = self
         self.searchBar.delegate = self
-//        self.gesture.delegate = self
-//        
-//        self.view.addGestureRecognizer(self.gesture)
         
-        
-        //self.hideKeyboardWhenTappedAround()
-        
+
         reloadData()
-
-
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+       
     }
     
    
     override func viewDidAppear(_ animated: Bool) {
         
         UIApplication.shared.setStatusBarHidden(false, with: .none)
-        self.collectionView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -65,47 +57,38 @@ class PeopleViewController: UIViewController, UICollectionViewDelegate ,UICollec
         }else{
             self.navigationController?.navigationBar.topItem?.title = "Students"
         }
+        self.table.reloadData()
 
-        self.collectionView.reloadData()
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: collectionView.bounds.size.width/3.5, height: collectionView.bounds.size.width/3.5)
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let cInset = (collectionView.bounds.size.width - ((3*collectionView.bounds.size.width)/3.5))/6
-        return UIEdgeInsets(top: 0.0, left: cInset, bottom: 15.0, right: cInset)
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     
+//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        return 75
+//    }
 
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(isTeacher){
-            return 50
+            return 14
         }else{
             return student.count
         }
-
     }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         if(isTeacher){
-            
-            
             let image = cell.viewWithTag(1) as! UIImageView
-            image.layer.cornerRadius = 0.5 * image.bounds.size.width
+            image.layer.cornerRadius = 0.5 * 0.9 * CGFloat(80)
             image.layer.masksToBounds = true
             image.image = UIImage(named: "profileex")!
             
@@ -113,15 +96,13 @@ class PeopleViewController: UIViewController, UICollectionViewDelegate ,UICollec
             name.adjustsFontSizeToFitWidth = true
             name.text = "Dr. Sheldon Cooper"
             
-            
-            // Configure the cell
-            
-            return cell
+            let dept = cell.viewWithTag(3) as! UILabel
+            dept.adjustsFontSizeToFitWidth = true
+            dept.text = "Orthopredict"
 
         }else{
-            
             let image = cell.viewWithTag(1) as! UIImageView
-            image.layer.cornerRadius = 0.5 * image.bounds.size.width
+            image.layer.cornerRadius = 0.5 * 0.9 * CGFloat(80)
             image.layer.masksToBounds = true
             image.image = UIImage(named: "student")!
             
@@ -129,15 +110,16 @@ class PeopleViewController: UIViewController, UICollectionViewDelegate ,UICollec
             name.adjustsFontSizeToFitWidth = true
             name.text = student[indexPath.row]
             
-            
-            // Configure the cell
-            
-            return cell
+            let dept = cell.viewWithTag(3) as! UILabel
+            dept.adjustsFontSizeToFitWidth = true
+            dept.text = "Orthopredict"
 
         }
+        
+        return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if(isTeacher){
             self.nameToSend = "Dr. Sheldon Cooper"
         }else{
@@ -146,6 +128,9 @@ class PeopleViewController: UIViewController, UICollectionViewDelegate ,UICollec
         
         self.performSegue(withIdentifier: "cellInfo", sender: indexPath)
     }
+    
+    
+    
     
     func tabBarDidSelectExtraLeftItem(_ tabBar: YALFoldingTabBar!){
         

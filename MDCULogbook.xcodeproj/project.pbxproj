@@ -9,14 +9,10 @@
 /* Begin PBXBuildFile section */
 		7514474CAF842C802B37F292 /* Pods_MDCULogbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE68BAA385CB03AA370AA81 /* Pods_MDCULogbook.framework */; };
 		75FC08D6E5EADAC6DB0F802E /* Pods_MDCULogbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181D3D0804673ED7D820A9A4 /* Pods_MDCULogbookUITests.framework */; };
-		900C21041D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C21031D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift */; };
 		900C21061D91A91300001325 /* DoctorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C21051D91A91300001325 /* DoctorProfileViewController.swift */; };
 		900C21081D91BC2000001325 /* LogbookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C21071D91BC2000001325 /* LogbookViewController.swift */; };
 		900C210A1D91BDA600001325 /* LogbookCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C21091D91BDA600001325 /* LogbookCollectionReusableView.swift */; };
-		9015686A1D910048008B979C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901568691D910048008B979C /* ProfileViewController.swift */; };
-		9015686C1D910FD1008B979C /* ProcedexContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */; };
 		9015686E1D911103008B979C /* ProcedexCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */; };
-		901568701D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015686F1D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift */; };
 		901568721D91389F008B979C /* ProcedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901568711D91389F008B979C /* ProcedexViewController.swift */; };
 		901568741D914117008B979C /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901568731D914117008B979C /* PeopleViewController.swift */; };
 		901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901A93521D8A8C1700190F8C /* AppDelegate.swift */; };
@@ -63,14 +59,10 @@
 		4489DDAF0F98B5D398D16970 /* Pods-MDCULogbookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbookUITests/Pods-MDCULogbookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4524FD27B8574458DC6B4A7A /* Pods-MDCULogbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDCULogbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDCULogbook/Pods-MDCULogbook.debug.xcconfig"; sourceTree = "<group>"; };
 		4823C73051B657FDBE6314CB /* Pods_MDCULogbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MDCULogbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		900C21031D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderDepartmentCollectionReusableView2.swift; sourceTree = "<group>"; };
 		900C21051D91A91300001325 /* DoctorProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorProfileViewController.swift; sourceTree = "<group>"; };
 		900C21071D91BC2000001325 /* LogbookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogbookViewController.swift; sourceTree = "<group>"; };
 		900C21091D91BDA600001325 /* LogbookCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogbookCollectionReusableView.swift; sourceTree = "<group>"; };
-		901568691D910048008B979C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexContainerViewController.swift; sourceTree = "<group>"; };
 		9015686D1D911103008B979C /* ProcedexCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexCollectionViewController.swift; sourceTree = "<group>"; };
-		9015686F1D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderDepartmentCollectionReusableView.swift; sourceTree = "<group>"; };
 		901568711D91389F008B979C /* ProcedexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedexViewController.swift; sourceTree = "<group>"; };
 		901568731D914117008B979C /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		901A934F1D8A8C1700190F8C /* MDCULogbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDCULogbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,10 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				905219B41D8FBE29005D7007 /* Storyboard */,
-				905219B31D8FBE18005D7007 /* Home */,
-				905219B51D8FBE3D005D7007 /* People */,
-				905219B61D8FBE5C005D7007 /* Note */,
-				905219B71D8FBE73005D7007 /* Logbook */,
+				90C4F96B1DA4193D00B18ADC /* StudentController */,
 				901A93521D8A8C1700190F8C /* AppDelegate.swift */,
 				901A935B1D8A8C1700190F8C /* pl.xcassets */,
 				901A93601D8A8C1700190F8C /* Info.plist */,
@@ -205,9 +194,6 @@
 				905219B11D8FAD12005D7007 /* HomeViewController.swift */,
 				90B489C21D9A61BF007AC33C /* Ward */,
 				90B489B91D9A48DD007AC33C /* symptoms */,
-				901568691D910048008B979C /* ProfileViewController.swift */,
-				9015686B1D910FD1008B979C /* ProcedexContainerViewController.swift */,
-				9015686F1D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -216,10 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				901A935D1D8A8C1700190F8C /* LaunchScreen.storyboard */,
-				905219AF1D8BD09A005D7007 /* NewMain.storyboard */,
-				905219BA1D8FBEF4005D7007 /* People.storyboard */,
-				905219B81D8FBEB1005D7007 /* Note.storyboard */,
-				905219BC1D8FBF02005D7007 /* Logbook.storyboard */,
+				90C4F9691DA414C700B18ADC /* Student */,
+				90C4F96A1DA416C800B18ADC /* Teacher */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -228,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				901568731D914117008B979C /* PeopleViewController.swift */,
-				900C21031D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift */,
 				900C21051D91A91300001325 /* DoctorProfileViewController.swift */,
 				90622FF41D92787600DC5961 /* DoctorRequestViewController.swift */,
 			);
@@ -272,6 +255,35 @@
 				901568711D91389F008B979C /* ProcedexViewController.swift */,
 			);
 			name = Ward;
+			sourceTree = "<group>";
+		};
+		90C4F9691DA414C700B18ADC /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				905219AF1D8BD09A005D7007 /* NewMain.storyboard */,
+				905219BA1D8FBEF4005D7007 /* People.storyboard */,
+				905219B81D8FBEB1005D7007 /* Note.storyboard */,
+				905219BC1D8FBF02005D7007 /* Logbook.storyboard */,
+			);
+			name = Student;
+			sourceTree = "<group>";
+		};
+		90C4F96A1DA416C800B18ADC /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Teacher;
+			sourceTree = "<group>";
+		};
+		90C4F96B1DA4193D00B18ADC /* StudentController */ = {
+			isa = PBXGroup;
+			children = (
+				905219B31D8FBE18005D7007 /* Home */,
+				905219B51D8FBE3D005D7007 /* People */,
+				905219B61D8FBE5C005D7007 /* Note */,
+				905219B71D8FBE73005D7007 /* Logbook */,
+			);
+			name = StudentController;
 			sourceTree = "<group>";
 		};
 		A83C32DDBFD114B34DDF27EB /* Frameworks */ = {
@@ -556,11 +568,8 @@
 				90622FF71D927DAB00DC5961 /* LogbookDetailViewController.swift in Sources */,
 				905219B21D8FAD12005D7007 /* HomeViewController.swift in Sources */,
 				905219C11D8FC5CA005D7007 /* NoteTableViewController.swift in Sources */,
-				9015686C1D910FD1008B979C /* ProcedexContainerViewController.swift in Sources */,
 				90C4F9681D9C18E300B18ADC /* ProcedexListTableViewController.swift in Sources */,
-				9015686A1D910048008B979C /* ProfileViewController.swift in Sources */,
 				900C21061D91A91300001325 /* DoctorProfileViewController.swift in Sources */,
-				900C21041D91A5CD00001325 /* HeaderDepartmentCollectionReusableView2.swift in Sources */,
 				90622FF51D92787600DC5961 /* DoctorRequestViewController.swift in Sources */,
 				901568741D914117008B979C /* PeopleViewController.swift in Sources */,
 				90B489BF1D9A4D1A007AC33C /* SymptomsCollectionViewController.swift in Sources */,
@@ -568,7 +577,6 @@
 				900C21081D91BC2000001325 /* LogbookViewController.swift in Sources */,
 				901A93531D8A8C1700190F8C /* AppDelegate.swift in Sources */,
 				900C210A1D91BDA600001325 /* LogbookCollectionReusableView.swift in Sources */,
-				901568701D911A3A008B979C /* HeaderDepartmentCollectionReusableView.swift in Sources */,
 				90B489C11D9A5AC3007AC33C /* SymptomsDetailViewController.swift in Sources */,
 				B7C9D6D91D9EAA6400A6C913 /* ChatViewController.swift in Sources */,
 				905219BF1D8FC0A4005D7007 /* NoteTableViewCell.swift in Sources */,

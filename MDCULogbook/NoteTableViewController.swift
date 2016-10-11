@@ -14,12 +14,6 @@ class NoteTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,17 +22,14 @@ class NoteTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 2
     }
 
@@ -55,23 +46,19 @@ class NoteTableViewController: UITableViewController {
         let header = view as! UITableViewHeaderFooterView
         header.contentView.backgroundColor = UIColor(red: 0.933, green: 0.933, blue: 0.933, alpha: 1.0)
 
-
         header.textLabel?.textColor = UIColor.darkGray
-        header.textLabel?.font = UIFont.systemFont(ofSize: 12)
-    
-    
+        header.textLabel?.font = UIFont.systemFont(ofSize: 14)
     }
     
-        override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "note", for: indexPath) as! NoteTableViewCell
-        
         cell.name.text = "Mr.Somchai Kaipak"
+        cell.ageSex.text = "M 50 ปี"
+        cell.symthom.text = "Dengue || HIV || Flu || Sick"
         cell.hn.text = "HN 12345/67"
         cell.profile_pic.layer.cornerRadius = 24
         cell.profile_pic.layer.masksToBounds = true
